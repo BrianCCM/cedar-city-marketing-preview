@@ -435,8 +435,8 @@
       inset: 0;
       background-image: url("brand_assets/IMG_7262.jpeg");
       background-size: cover;
-      background-position: center 60%;
-      opacity: 0.13;
+      background-position: left 38%;
+      opacity: 0.35;
       mix-blend-mode: multiply;
       pointer-events: none;
       z-index: 1;
@@ -1122,6 +1122,8 @@
       border: 1px solid rgba(244,237,228,0.1);
       border-radius: 20px;
       padding: 2rem;
+      text-decoration: none;
+      color: inherit;
       box-shadow: 0 2px 4px rgba(0,0,0,0.15), 0 16px 40px rgba(0,0,0,0.22);
       transition: transform 0.2s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s ease, border-color 0.2s ease;
     }
@@ -1130,6 +1132,7 @@
       border-color: rgba(182,61,43,0.4);
       box-shadow: 0 4px 8px rgba(0,0,0,0.18), 0 20px 48px rgba(0,0,0,0.28);
     }
+    .tp-card:focus-visible { outline: 2px solid var(--red-lt); outline-offset: 3px; }
     @media (max-width: 420px) { .tp-card { flex-direction: column; text-align: center; gap: 1.35rem; } }
 
     .tp-photo {
@@ -1415,8 +1418,6 @@
   <section class="hero-aurora" id="home">
     <!-- Red rock background -->
     <div class="hero-rock-bg"></div>
-    <!-- Aurora shimmer layer -->
-    <div class="aurora-layer"></div>
 
     <!-- Centered hero content -->
     <div class="hero-content">
@@ -1470,23 +1471,23 @@
       </div>
 
       <div class="team-preview-grid fade-up">
-        <div class="tp-card">
+        <a href="team.html" class="tp-card">
           <div class="tp-photo"><img src="CCM/2.png" alt="Brian Johnson" /></div>
           <div>
             <p class="tp-role">Lead Marketing Strategist</p>
             <h3 class="tp-name">Brian Johnson</h3>
             <p class="tp-bio">10+ years across freelance, agency, and in-house roles. Brian builds the overall strategy and makes sure every dollar is tracked.</p>
           </div>
-        </div>
+        </a>
 
-        <div class="tp-card">
+        <a href="team.html" class="tp-card">
           <div class="tp-photo"><img src="CCM/1.png" alt="Madi Vikari" /></div>
           <div>
             <p class="tp-role">Content &amp; Paid Ads Specialist</p>
             <h3 class="tp-name">Madi Vikari</h3>
             <p class="tp-bio">SUU marketing grad specializing in content, social, and paid campaigns that turn attention into real leads.</p>
           </div>
-        </div>
+        </a>
       </div>
 
       <div class="team-preview-cta fade-up">
