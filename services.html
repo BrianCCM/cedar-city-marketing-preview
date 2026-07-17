@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="brand_assets/CCM_Logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Marketing Services in Cedar City, UT | Cedar City Marketing</title>
+  <meta name="description" content="Full-service digital marketing for Southern Utah businesses. Local SEO, paid ads, web design, social media, email marketing, reputation management, and more." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.cedarcitymarketing.com/services" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.cedarcitymarketing.com/services" />
+  <meta property="og:title" content="Digital Marketing Services in Cedar City, UT | Cedar City Marketing" />
+  <meta property="og:description" content="Full-service digital marketing for Southern Utah businesses. SEO, paid ads, web design, social media, and more." />
+  <meta property="og:image" content="https://www.cedarcitymarketing.com/brand_assets/CCM%20Logo-3.png" />
+  <meta property="og:site_name" content="Cedar City Marketing" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Digital Marketing Services in Cedar City, UT | Cedar City Marketing" />
+  <meta name="twitter:description" content="Full-service digital marketing for Southern Utah businesses." />
+  <meta name="twitter:image" content="https://www.cedarcitymarketing.com/brand_assets/CCM%20Logo-3.png" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --red:     #B63D2B;
+      --red-dk:  #8f2e1e;
+      --red-lt:  #d4503b;
+      --canyon:  #1F2A30;
+      --sand:    #F4EDE4;
+      --sand-dk: #e8ddd2;
+      --white:   #FFFFFF;
+    }
+
+    * { box-sizing: border-box; }
+    body { font-family: 'Open Sans', sans-serif; color: var(--canyon); background: var(--white); margin: 0; overflow-x: hidden; }
+    h1,h2,h3,h4 { font-family: 'Montserrat', sans-serif; }
+
+    /* NAV */
+    nav { position: fixed; top:0; left:0; right:0; z-index:100; background: rgba(31,42,48,0.97); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(244,237,228,0.08); }
+    .nav-inner { max-width:1200px; margin:0 auto; padding:0 2rem; height:96px; display:flex; align-items:center; justify-content:space-between; }
+    .nav-logo img { height:80px; width:auto; max-width:360px; }
+    .nav-links { display:flex; gap:2.5rem; list-style:none; margin:0; padding:0; }
+    .nav-links a { color:rgba(244,237,228,0.78); text-decoration:none; font-family:'Montserrat',sans-serif; font-weight:600; font-size:0.82rem; letter-spacing:0.06em; text-transform:uppercase; transition:color 0.2s ease; }
+    .nav-links a:hover { color:var(--sand); }
+    .nav-cta { background:var(--red) !important; color:white !important; padding:0.55rem 1.4rem; border-radius:6px; box-shadow: 0 2px 12px rgba(182,61,43,0.35); transition: background 0.2s ease, transform 0.15s cubic-bezier(0.34,1.56,0.64,1) !important; }
+    .nav-cta:hover { background:var(--red-lt) !important; transform:translateY(-1px); }
+    .nav-toggle { display:none; flex-direction:column; gap:5px; cursor:pointer; padding:4px; background:none; border:none; }
+    .nav-toggle span { display:block; width:24px; height:2px; background:rgba(244,237,228,0.8); border-radius:2px; }
+    @media(max-width:768px){ .nav-links{display:none;} .nav-toggle{display:flex;} }
+
+    /* ── Nav services dropdown ── */
+    .nav-item-services { position: relative; }
+    .nav-dropdown { display: none; position: absolute; top: 100%; left: 0; transform: none; margin-top: 0; background: rgba(18,25,31,0.98); backdrop-filter: blur(16px); border: 1px solid rgba(244,237,228,0.1); border-radius: 12px; padding: 0.4rem; list-style: none; margin: 0; min-width: 190px; box-shadow: 0 8px 40px rgba(0,0,0,0.3), 0 2px 8px rgba(0,0,0,0.2); z-index: 200; }
+    .nav-item-services:hover .nav-dropdown { display: block; } .nav-dropdown::before { content:""; position:absolute; top:-8px; left:0; right:0; height:8px; }
+    .nav-dropdown li a { display: block; padding: 0.48rem 0.85rem; border-radius: 6px; color: rgba(244,237,228,0.72); font-family: 'Montserrat',sans-serif; font-weight: 600; font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; white-space: nowrap; transition: background 0.15s ease, color 0.15s ease; }
+    .nav-dropdown li a:hover { background: rgba(182,61,43,0.18); color: rgba(244,237,228,0.95); }
+    .nav-services-toggle { display: flex !important; align-items: center; gap: 0.35rem; }
+    .nav-caret { transition: transform 0.2s ease; flex-shrink: 0; }
+    .nav-item-services:hover .nav-caret { transform: rotate(180deg); }
+
+    /* HERO */
+    .page-hero {
+      padding: 180px 2rem 100px;
+      background: var(--sand);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    @media(max-width:768px) { .page-hero { padding: 140px 1.5rem 60px; } }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 35%, rgba(182,61,43,0.13) 0%, transparent 60%),
+                  radial-gradient(ellipse at 15% 85%, rgba(182,61,43,0.08) 0%, transparent 55%);
+      pointer-events: none;
+    }
+    .page-hero-label {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      background: rgba(182,61,43,0.1); border: 1px solid rgba(182,61,43,0.28);
+      color: var(--red); font-family: 'Montserrat',sans-serif; font-weight:700;
+      font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase;
+      padding:0.4rem 1rem; border-radius:100px; margin-bottom: 1.5rem;
+    }
+    .page-hero h1 {
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 1.05;
+      color: var(--canyon);
+      margin: 0 0 1.25rem;
+    }
+    .page-hero h1 em { font-style:normal; color:var(--red); }
+    .page-hero p {
+      font-size: 1.1rem; line-height: 1.75; color: rgba(31,42,48,0.62);
+      max-width: 560px; margin: 0 auto;
+    }
+
+    /* SERVICES GRID */
+    .section { padding: 5rem 2rem; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+
+    .svc-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    @media(max-width:900px) { .svc-grid { grid-template-columns: repeat(2,1fr); } }
+    @media(max-width:560px) { .svc-grid { grid-template-columns: 1fr; } }
+
+    .svc-card {
+      background: var(--sand);
+      border-radius: 16px;
+      padding: 1.75rem 1.75rem 2rem;
+      border: 1px solid rgba(31,42,48,0.07);
+      box-shadow: 0 2px 4px rgba(31,42,48,0.04), 0 8px 28px rgba(31,42,48,0.06);
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s ease;
+    }
+    .svc-card:hover { transform: translateY(-3px); box-shadow: 0 4px 8px rgba(31,42,48,0.06), 0 16px 40px rgba(31,42,48,0.1); }
+    .svc-card:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+
+    .svc-icon {
+      width: 48px; height: 48px;
+      background: rgba(182,61,43,0.1);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--red);
+      margin-bottom: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .svc-cat {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.68rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--red); margin: 0 0 0.35rem;
+    }
+
+    .svc-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.15rem; font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--canyon); margin: 0 0 0.65rem;
+    }
+
+    .svc-desc {
+      font-size: 0.92rem; line-height: 1.72;
+      color: rgba(31,42,48,0.62); margin: 0 0 1rem;
+      flex: 1;
+    }
+
+    .svc-bullets {
+      list-style: none; margin: 0 0 1.25rem; padding: 0;
+      display: flex; flex-direction: column; gap: 0.45rem;
+    }
+    .svc-bullets li {
+      font-size: 0.85rem; line-height: 1.5;
+      color: rgba(31,42,48,0.65);
+      display: flex; align-items: flex-start; gap: 0.55rem;
+    }
+    .svc-bullets li::before {
+      content: '';
+      display: block; width: 5px; height: 5px;
+      border-radius: 50%; background: var(--red);
+      flex-shrink: 0; margin-top: 0.45em; opacity: 0.75;
+    }
+
+    .svc-cta {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      margin-top: auto;
+      font-family: 'Montserrat',sans-serif; font-weight: 700;
+      font-size: 0.75rem; letter-spacing: 0.04em; text-transform: uppercase;
+      color: var(--red); text-decoration: none;
+    }
+    .svc-cta svg { transition: transform 0.2s cubic-bezier(0.34,1.56,0.64,1); }
+    .svc-card:hover .svc-cta svg { transform: translateX(3px); }
+
+    /* CTA BAND */
+    .cta-band {
+      background: var(--canyon); padding: 5rem 2rem; text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .cta-band::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 60% 40%, rgba(182,61,43,0.18) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .cta-band h2 {
+      font-family: 'Montserrat',sans-serif; font-size: clamp(1.9rem,3.5vw,2.75rem);
+      font-weight: 800; letter-spacing: -0.03em; line-height: 1.15;
+      color: var(--sand); margin: 0 0 1rem; position: relative; z-index: 2;
+    }
+    .cta-band p {
+      font-size: 1.05rem; line-height: 1.75; color: rgba(244,237,228,0.58);
+      max-width: 460px; margin: 0 auto 2.25rem; position: relative; z-index: 2;
+    }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--red); color: white; font-family: 'Montserrat',sans-serif;
+      font-weight:700; font-size:0.9rem; letter-spacing:0.03em;
+      padding:0.9rem 2rem; border-radius:8px; text-decoration:none;
+      box-shadow: 0 4px 24px rgba(182,61,43,0.45);
+      transition: background 0.2s ease, transform 0.15s cubic-bezier(0.34,1.56,0.64,1);
+      position: relative; z-index: 2;
+    }
+    .btn-primary:hover { background:var(--red-lt); transform:translateY(-2px); }
+    .btn-primary:active { transform:translateY(0); }
+
+    /* FOOTER */
+    footer { background:var(--canyon); border-top:1px solid rgba(244,237,228,0.08); padding:2rem; text-align:center; }
+    footer p { color:rgba(244,237,228,0.42); font-size:0.82rem; margin:0; }
+    footer a { color:rgba(244,237,228,0.58); text-decoration:none; transition:color 0.2s ease; }
+    footer a:hover { color:var(--sand); }
+  </style>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QV3VRVFFLL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QV3VRVFFLL');
+    gtag('config', 'AW-18245739484');
+  </script>
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+    (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','1291450966103691');fbq('track','PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1291450966103691&ev=PageView&noscript=1"/></noscript>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Cedar City Marketing">
+        <img src="brand_assets/CCM Logo-4.png" alt="Cedar City Marketing" />
+      </a>
+      <ul class="nav-links">
+        <li class="nav-item-services">
+          <a href="/services" class="nav-services-toggle">Services <svg class="nav-caret" width="11" height="7" viewBox="0 0 11 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1,1 5.5,6 10,1"/></svg></a>
+          <ul class="nav-dropdown">
+            <li><a href="/get-found">Local SEO</a></li>
+            <li><a href="/get-customers">Paid Ads</a></li>
+            <li><a href="/get-reviews">Reputation</a></li>
+            <li><a href="/web-design">Web Design</a></li>
+            <li><a href="/marketing-consultant">Marketing Consulting</a></li>
+            <li><a href="/services">Social Media</a></li>
+            <li><a href="/services">Email Marketing</a></li>
+            <li><a href="/services">AI Marketing</a></li>
+            <li><a href="/services">Analytics</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#why-us">Why Us</a></li>
+        <li><a href="index.html#process">Our Process</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="book-a-call.html" class="nav-cta">Book a Call</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Open menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div style="position:relative;z-index:2;">
+      <div class="page-hero-label">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        What We Do
+      </div>
+      <h1>Every service built for<br /><em>real results.</em></h1>
+      <p>We offer a full suite of digital marketing services designed for Southern Utah businesses. Pick one, stack a few, or let us build a custom strategy around your goals.</p>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--white);">
+    <div class="section-inner">
+      <div class="svc-grid">
+
+        <!-- Local SEO -->
+        <a href="/get-found" class="svc-card" id="local-seo">
+          <div class="svc-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </div>
+          <p class="svc-cat">Discovery</p>
+          <h2 class="svc-title">Local SEO</h2>
+          <p class="svc-desc">Dominate local search and Google Maps so customers in Cedar City, St. George, and Southern Utah find you first, every time they search.</p>
+          <ul class="svc-bullets">
+            <li>Google Business Profile optimization</li>
+            <li>On-page and technical SEO</li>
+            <li>Citation building across 50+ directories</li>
+            <li>Local keyword targeting</li>
+          </ul>
+          <span class="svc-cta">Learn more <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+        </a>
+
+        <!-- Paid Ads -->
+        <a href="/get-customers" class="svc-card" id="paid-ads">
+          <div class="svc-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg>
+          </div>
+          <p class="svc-cat">Growth</p>
+          <h2 class="svc-title">Paid Ads</h2>
+          <p class="svc-desc">Targeted Google and Meta campaigns built to generate leads and revenue, not just clicks. We manage your budget like it's our own.</p>
+          <ul class="svc-bullets">
+            <li>Google Search and Display ads</li>
+            <li>Facebook and Instagram ads</li>
+            <li>Retargeting campaigns</li>
+            <li>ROI tracking and reporting</li>
+          </ul>
+          <span class="svc-cta">Learn more <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+        </a>
+
+        <!-- Reputation Management -->
+        <a href="/get-reviews" class="svc-card" id="reputation">
+          <div class="svc-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="svc-cat">Trust</p>
+          <h2 class="svc-title">Reputation Management</h2>
+          <p class="svc-desc">More 5-star reviews means more customers. We help you build, protect, and leverage your online reputation across Google and beyond.</p>
+          <ul class="svc-bullets">
+            <li>Automated review generation</li>
+            <li>Google and Yelp profile management</li>
+            <li>Review response strategy</li>
+            <li>Reputation monitoring</li>
+          </ul>
+          <span class="svc-cta">Learn more <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+        </a>
+
+        <!-- Web Design -->
+        <a href="/web-design" class="svc-card" id="web-design">
+          <div class="svc-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <p class="svc-cat">Presence</p>
+          <h2 class="svc-title">Web Design</h2>
+          <p class="svc-desc">Fast, conversion-focused websites that look great, rank on Google, and turn visitors into paying customers from day one.</p>
+          <ul class="svc-bullets">
+            <li>Custom design, built for your brand</li>
+            <li>SEO-ready from the ground up</li>
+            <li>Mobile-first and fast-loading</li>
+            <li>Lead capture and conversion optimization</li>
+          </ul>
+          <span class="svc-cta">Learn more <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+        </a>
+
+        <!-- Social Media -->
+        <a href="/book-a-call" class="svc-card" id="social-media">
+          <div class="svc-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </div>
+          <p class="svc-cat">Engagement</p>
+          <h2 class="svc-title">Social Media</h2>
+          <p class="svc-desc">Consistent, on-brand content across Instagram, Facebook, and LinkedIn that builds an audience and drives real business results.</p>
+          <ul class="svc-bullets">
+            <li>Content strategy and calendar</li>
+            <li>Graphic design and video creation</li>
+            <li>Community management</li>
+            <li>Performance tracking</li>
+          </ul>
+          <span class="svc-cta">Get started <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+        </a>
+
+        <!-- Email Marketing -->
+        <a href="/book-a-call" class="svc-card" id="email-marketing">
+          <div class="svc-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <p class="svc-cat">Retention</p>
+          <h2 class="svc-title">Email Marketing</h2>
+          <p class="svc-desc">Automated sequences and targeted campaigns that turn leads into customers and keep your existing customers coming back for more.</p>
+          <ul class="svc-bullets">
+            <li>Automated welcome and nurture sequences</li>
+            <li>Promotional and seasonal campaigns</li>
+            <li>List segmentation and management</li>
+            <li>Open rate and conversion tracking</li>
+          </ul>
+          <span class="svc-cta">Get started <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+        </a>
+
+        <!-- AI Marketing -->
+        <a href="/book-a-call" class="svc-card" id="ai-marketing">
+          <div class="svc-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16" r="1" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <p class="svc-cat">Innovation</p>
+          <h2 class="svc-title">AI Marketing</h2>
+          <p class="svc-desc">Use AI to work smarter: faster content creation, smarter ad targeting, better insights, and campaigns that adapt in real time.</p>
+          <ul class="svc-bullets">
+            <li>AI-assisted content and copywriting</li>
+            <li>Predictive audience targeting</li>
+            <li>Automated campaign optimization</li>
+            <li>AI search and answer engine visibility</li>
+          </ul>
+          <span class="svc-cta">Get started <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+        </a>
+
+        <!-- Analytics -->
+        <a href="/book-a-call" class="svc-card" id="analytics">
+          <div class="svc-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+          </div>
+          <p class="svc-cat">Insights</p>
+          <h2 class="svc-title">Analytics & Reporting</h2>
+          <p class="svc-desc">Know exactly what's working and where every dollar goes. Monthly reports in plain English. No jargon, no vanity metrics.</p>
+          <ul class="svc-bullets">
+            <li>Monthly performance reports</li>
+            <li>ROI tracking across all channels</li>
+            <li>Google Analytics setup and management</li>
+            <li>Actionable insights, not just data</li>
+          </ul>
+          <span class="svc-cta">Get started <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <h2>Not sure where to start?</h2>
+    <p>Book a free 30-minute strategy call and we'll build a plan around what your business actually needs.</p>
+    <a href="book-a-call.html" class="btn-primary">
+      Book a Free Call
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2026 <a href="index.html">Cedar City Marketing</a>. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const links = document.querySelector('.nav-links');
+      const isOpen = links.style.display === 'flex';
+      Object.assign(links.style, { display: isOpen ? 'none' : 'flex', flexDirection:'column', position:'absolute', top:'96px', left:'0', right:'0', background:'rgba(31,42,48,0.98)', padding:'1.5rem 2rem', gap:'1.25rem', borderBottom:'1px solid rgba(244,237,228,0.1)' });
+    }
+  </script>
+  <!-- Cookie Notice -->
+  <div id="cookie-bar" style="position:fixed;bottom:0;left:0;right:0;z-index:9999;background:rgba(14,21,25,0.97);border-top:1px solid rgba(221,213,200,0.08);padding:1rem 2rem;display:none;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
+    <p style="margin:0;font-family:'Open Sans',sans-serif;font-size:0.85rem;color:rgba(221,213,200,0.65);">This site uses cookies for analytics and advertising. <a href="/privacy-policy" style="color:#B63D2B;">Privacy Policy</a></p>
+    <button id="cookie-ok" style="background:#B63D2B;color:white;border:none;padding:0.45rem 1.1rem;border-radius:5px;cursor:pointer;font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.78rem;letter-spacing:0.05em;white-space:nowrap;">Got it</button>
+  </div>
+  <script>
+    if (!localStorage.getItem('cookie-ok')) {
+      document.getElementById('cookie-bar').style.display = 'flex';
+    }
+    document.getElementById('cookie-ok').addEventListener('click', function() {
+      localStorage.setItem('cookie-ok', '1');
+      document.getElementById('cookie-bar').style.display = 'none';
+    });
+  </script>
+</body>
+</html>

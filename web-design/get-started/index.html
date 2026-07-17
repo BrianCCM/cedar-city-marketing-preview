@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="../../brand_assets/CCM_Logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Your Website Started | Cedar City Marketing</title>
+  <meta name="description" content="Tell us about your business and what you need from your website. Cedar City Marketing builds custom, SEO-optimized websites for Southern Utah businesses." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://www.cedarcitymarketing.com/web-design/get-started" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg:      #0e1519;
+      --red:     #B63D2B;
+      --red-dk:  #8f2e1e;
+      --red-lt:  #d4503b;
+      --canyon:  #1F2A30;
+      --sand:    #F4EDE4;
+      --sand-dk: #e8ddd2;
+      --white:   #FFFFFF;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Open Sans', sans-serif; color: var(--canyon); background: var(--white); overflow-x: hidden; }
+    h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; }
+
+    /* ── Nav ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(14,21,25,0.97);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(244,237,228,0.07);
+    }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 2rem; height: 84px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo img { height: 68px; width: auto; max-width: 300px; }
+    .nav-back { display: inline-flex; align-items: center; gap: 0.5rem; color: rgba(244,237,228,0.6); font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; transition: color 0.2s; }
+    .nav-back:hover { color: var(--sand); }
+    .nav-back svg { transition: transform 0.2s cubic-bezier(0.34,1.56,0.64,1); }
+    .nav-back:hover svg { transform: translateX(-3px); }
+
+    /* ── Split Layout ── */
+    .page-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 100vh;
+    }
+    @media(max-width: 900px) {
+      .page-wrap { grid-template-columns: 1fr; }
+      .left-panel { padding-top: 7rem; }
+    }
+
+    /* ── Left panel ── */
+    .left-panel {
+      background: var(--bg);
+      padding: 10rem 4rem 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .left-panel::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 60%, rgba(182,61,43,0.32) 0%, transparent 52%),
+        radial-gradient(ellipse at 85% 25%, rgba(143,46,30,0.18) 0%, transparent 45%);
+      pointer-events: none;
+    }
+    .left-content { position: relative; z-index: 1; }
+
+    .left-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(182,61,43,0.85);
+      margin-bottom: 1.5rem;
+    }
+    .left-eyebrow span { width: 24px; height: 1px; background: var(--red); display: inline-block; }
+
+    .left-panel h1 {
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 1.06;
+      color: var(--sand);
+      margin-bottom: 1.25rem;
+    }
+    .left-panel h1 em { font-style: normal; color: var(--red); }
+
+    .left-panel .lead {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: rgba(244,237,228,0.58);
+      margin-bottom: 2.5rem;
+      max-width: 420px;
+    }
+
+    .trust-items { display: flex; flex-direction: column; gap: 1rem; }
+    .trust-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.85rem;
+      padding: 1rem 1.25rem;
+      background: rgba(244,237,228,0.04);
+      border: 1px solid rgba(244,237,228,0.07);
+      border-radius: 12px;
+    }
+    .trust-icon { width: 36px; height: 36px; border-radius: 10px; background: rgba(182,61,43,0.18); display: flex; align-items: center; justify-content: center; color: var(--red); flex-shrink: 0; }
+    .trust-text h4 { font-family: 'Montserrat', sans-serif; font-size: 0.88rem; font-weight: 700; color: rgba(244,237,228,0.85); margin: 0 0 0.2rem; }
+    .trust-text p { font-size: 0.8rem; line-height: 1.6; color: rgba(244,237,228,0.45); margin: 0; }
+
+    .left-contact { margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid rgba(244,237,228,0.08); }
+    .left-contact p { font-size: 0.82rem; color: rgba(244,237,228,0.4); margin-bottom: 0.5rem; }
+    .left-contact a { color: rgba(244,237,228,0.65); text-decoration: none; font-size: 0.88rem; font-family: 'Montserrat', sans-serif; font-weight: 600; transition: color 0.2s; }
+    .left-contact a:hover { color: var(--sand); }
+
+    /* ── Right panel (form) ── */
+    .right-panel {
+      background: var(--sand);
+      padding: 9rem 4rem 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    @media(max-width: 900px) {
+      .right-panel { padding: 3rem 2rem 5rem; }
+      .left-panel { padding: 7rem 2rem 3rem; }
+    }
+
+    .form-heading {
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--canyon);
+      margin-bottom: 0.35rem;
+    }
+    .form-sub {
+      font-size: 0.85rem;
+      color: rgba(31,42,48,0.5);
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    /* form elements */
+    .form-group { margin-bottom: 1.25rem; }
+    .form-group label {
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.74rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: rgba(31,42,48,0.6);
+      margin-bottom: 0.45rem;
+    }
+    .form-group label .req { color: var(--red); }
+    .form-control {
+      width: 100%;
+      background: var(--white);
+      border: 1.5px solid rgba(31,42,48,0.12);
+      border-radius: 10px;
+      padding: 0.75rem 1rem;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.93rem;
+      color: var(--canyon);
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+    .form-control::placeholder { color: rgba(31,42,48,0.35); }
+    .form-control:focus { border-color: var(--red); box-shadow: 0 0 0 3px rgba(182,61,43,0.12); }
+    textarea.form-control { resize: vertical; min-height: 100px; }
+    select.form-control { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%231F2A30' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 1rem center; padding-right: 2.5rem; cursor: pointer; }
+
+    /* choice pills */
+    .pill-group { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .pill-input { display: none; }
+    .pill-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--white);
+      border: 1.5px solid rgba(31,42,48,0.14);
+      color: rgba(31,42,48,0.65);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 0.78rem;
+      padding: 0.45rem 0.9rem;
+      border-radius: 100px;
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s, color 0.15s;
+      user-select: none;
+    }
+    .pill-label:hover { border-color: rgba(182,61,43,0.4); color: var(--red); }
+    .pill-input:checked + .pill-label { background: rgba(182,61,43,0.1); border-color: var(--red); color: var(--red); }
+
+    /* two-col row */
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    @media(max-width: 640px) { .form-row { grid-template-columns: 1fr; } }
+
+    /* submit button */
+    .btn-submit {
+      width: 100%;
+      background: var(--red);
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      box-shadow: 0 4px 24px rgba(182,61,43,0.4);
+      transition: background 0.2s, transform 0.15s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s;
+      margin-top: 0.5rem;
+    }
+    .btn-submit:hover { background: var(--red-lt); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(182,61,43,0.45); }
+    .btn-submit:active { transform: translateY(0); }
+    .btn-submit:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+
+    .form-disclaimer {
+      font-size: 0.75rem;
+      color: rgba(31,42,48,0.42);
+      text-align: center;
+      margin-top: 0.85rem;
+      line-height: 1.6;
+    }
+
+    /* success state */
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+    .form-success .success-icon {
+      width: 64px; height: 64px;
+      background: rgba(182,61,43,0.1);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1.5rem;
+      color: var(--red);
+    }
+    .form-success h3 { font-size: 1.4rem; font-weight: 900; color: var(--canyon); margin-bottom: 0.75rem; letter-spacing: -0.03em; }
+    .form-success p { font-size: 0.95rem; line-height: 1.75; color: rgba(31,42,48,0.6); max-width: 360px; margin: 0 auto; }
+  </style>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QV3VRVFFLL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QV3VRVFFLL');
+    gtag('config', 'AW-18245739484');
+  </script>
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+    (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','1291450966103691');fbq('track','PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1291450966103691&ev=PageView&noscript=1"/></noscript>
+</head>
+<body>
+
+  <!-- ── Nav ── -->
+  <nav>
+    <div class="nav-inner">
+      <a href="../../index.html" class="nav-logo" aria-label="Cedar City Marketing home">
+        <img src="../../brand_assets/CCM Logo-4.png" alt="Cedar City Marketing" />
+      </a>
+      <a href="../" class="nav-back">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 8H3M7 4l-4 4 4 4"/></svg>
+        Back to Web Design
+      </a>
+    </div>
+  </nav>
+
+  <!-- ── Split Layout ── -->
+  <div class="page-wrap">
+
+    <!-- Left: Value prop -->
+    <div class="left-panel">
+      <div class="left-content">
+
+        <div class="left-eyebrow">
+          <span></span>
+          Web Design Cedar City
+        </div>
+
+        <h1>Let's build a website<br />that actually <em>works.</em></h1>
+
+        <p class="lead">
+          Fill out the form and we'll reach out within one business day to talk through your goals, your market, and exactly what we'd build for you.
+        </p>
+
+        <div class="trust-items">
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="trust-text">
+              <h4>Free site audit included</h4>
+              <p>We'll review your current online presence before the call so you get real insights, not a generic pitch.</p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="trust-text">
+              <h4>Response within one business day</h4>
+              <p>No automated sequences. You'll hear from a real person on our team.</p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="trust-text">
+              <h4>Local to Cedar City</h4>
+              <p>We know your market, your competitors, and what ranks in Southern Utah.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="left-contact">
+          <p>Prefer to reach out directly?</p>
+          <a href="tel:+14352336029">(435) 233-6029</a>
+          &nbsp;&nbsp;·&nbsp;&nbsp;
+          <a href="mailto:brian@cedarcitymarketing.com">brian@cedarcitymarketing.com</a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Right: Form -->
+    <div class="right-panel">
+
+      <p class="form-heading">Tell us about your project</p>
+      <p class="form-sub">We'll review your submission and follow up within one business day.</p>
+
+      <form id="lead-form" novalidate>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-name">Your Name <span class="req">*</span></label>
+            <input type="text" id="f-name" name="name" class="form-control" placeholder="Jane Smith" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="f-biz">Business Name <span class="req">*</span></label>
+            <input type="text" id="f-biz" name="business" class="form-control" placeholder="Smith Plumbing Co." required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-email">Email <span class="req">*</span></label>
+            <input type="email" id="f-email" name="email" class="form-control" placeholder="jane@example.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="f-phone">Phone</label>
+            <input type="tel" id="f-phone" name="phone" class="form-control" placeholder="(435) 555-0100" autocomplete="tel" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="f-url">Current Website (if you have one)</label>
+          <input type="url" id="f-url" name="website" class="form-control" placeholder="www.yoursite.com" autocomplete="url" />
+        </div>
+
+        <div class="form-group">
+          <label>What is the main goal of your new website? <span class="req">*</span></label>
+          <div class="pill-group" role="group" aria-label="Website goal">
+            <input type="radio" name="goal" id="g-leads" value="Generate leads and calls" class="pill-input" />
+            <label for="g-leads" class="pill-label">Generate leads and calls</label>
+
+            <input type="radio" name="goal" id="g-brand" value="Build brand authority" class="pill-input" />
+            <label for="g-brand" class="pill-label">Build brand authority</label>
+
+            <input type="radio" name="goal" id="g-seo" value="Rank on Google" class="pill-input" />
+            <label for="g-seo" class="pill-label">Rank on Google</label>
+
+            <input type="radio" name="goal" id="g-ecom" value="Sell online" class="pill-input" />
+            <label for="g-ecom" class="pill-label">Sell online</label>
+
+            <input type="radio" name="goal" id="g-refresh" value="Refresh existing site" class="pill-input" />
+            <label for="g-refresh" class="pill-label">Refresh existing site</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="f-budget">Approximate Budget</label>
+          <select id="f-budget" name="budget" class="form-control">
+            <option value="" disabled selected>Select a range</option>
+            <option value="under-1000">Less than $1,000</option>
+            <option value="1000-2500">$1,000 to $2,500</option>
+            <option value="2500-5000">$2,500 to $5,000</option>
+            <option value="5000-plus">$5,000+</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="f-message">Anything else we should know?</label>
+          <textarea id="f-message" name="message" class="form-control" placeholder="Tell us about your business, your customers, your competitors, or anything else that would help us prepare..." rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">
+          Send My Project Details
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </button>
+        <p class="form-disclaimer">No spam. No pressure. Just a real conversation about your website.</p>
+
+      </form>
+
+      <div class="form-success" id="form-success" aria-live="polite">
+        <div class="success-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3>We got it. Thank you!</h3>
+        <p>Expect to hear from us within one business day. We'll review your site before we reach out so the conversation is worth your time.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('lead-form');
+    const success = document.getElementById('form-success');
+    const submitBtn = form.querySelector('.btn-submit');
+
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      // Basic required field validation
+      const name = form.querySelector('#f-name');
+      const biz = form.querySelector('#f-biz');
+      const email = form.querySelector('#f-email');
+      let valid = true;
+
+      [name, biz, email].forEach(field => {
+        if (!field.value.trim()) {
+          field.style.borderColor = 'var(--red)';
+          field.style.boxShadow = '0 0 0 3px rgba(182,61,43,0.15)';
+          valid = false;
+        } else {
+          field.style.borderColor = '';
+          field.style.boxShadow = '';
+        }
+      });
+
+      if (!valid) return;
+
+      // Loading state
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+
+      try {
+        const response = await fetch('https://formspree.io/f/mnjwvjvn', {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          form.style.display = 'none';
+          success.style.display = 'block';
+          fbq('track', 'Lead');
+          gtag('event', 'generate_lead', { send_to: ['G-QV3VRVFFLL', 'AW-18245739484'] });
+        } else {
+          const data = await response.json();
+          const msg = data.errors ? data.errors.map(e => e.message).join(', ') : 'Something went wrong. Please try again or email brian@cedarcitymarketing.com.';
+          alert(msg);
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Send My Project Details';
+        }
+      } catch (err) {
+        alert('Network error. Please try again or email brian@cedarcitymarketing.com.');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send My Project Details';
+      }
+    });
+  </script>
+  <!-- Cookie Notice -->
+  <div id="cookie-bar" style="position:fixed;bottom:0;left:0;right:0;z-index:9999;background:rgba(14,21,25,0.97);border-top:1px solid rgba(221,213,200,0.08);padding:1rem 2rem;display:none;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
+    <p style="margin:0;font-family:'Open Sans',sans-serif;font-size:0.85rem;color:rgba(221,213,200,0.65);">This site uses cookies for analytics and advertising. <a href="/privacy-policy" style="color:#B63D2B;">Privacy Policy</a></p>
+    <button id="cookie-ok" style="background:#B63D2B;color:white;border:none;padding:0.45rem 1.1rem;border-radius:5px;cursor:pointer;font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.78rem;letter-spacing:0.05em;white-space:nowrap;">Got it</button>
+  </div>
+  <script>
+    if (!localStorage.getItem('cookie-ok')) {
+      document.getElementById('cookie-bar').style.display = 'flex';
+    }
+    document.getElementById('cookie-ok').addEventListener('click', function() {
+      localStorage.setItem('cookie-ok', '1');
+      document.getElementById('cookie-bar').style.display = 'none';
+    });
+  </script>
+</body>
+</html>

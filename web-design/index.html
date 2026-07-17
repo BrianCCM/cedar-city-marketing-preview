@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="../brand_assets/CCM_Logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Design Cedar City UT | Cedar City Marketing</title>
+  <meta name="description" content="Professional web design in Cedar City, UT. Cedar City Marketing builds websites that rank on Google, generate leads, and grow Southern Utah businesses. Call (435) 233-6029." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.cedarcitymarketing.com/web-design" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.cedarcitymarketing.com/web-design" />
+  <meta property="og:title" content="Web Design Cedar City UT | Cedar City Marketing" />
+  <meta property="og:description" content="Cedar City Marketing builds websites that rank on Google and convert visitors into customers. Serving Cedar City, St. George, and Southern Utah." />
+  <meta property="og:image" content="https://www.cedarcitymarketing.com/brand_assets/CCM%20Logo-3.png" />
+  <meta property="og:site_name" content="Cedar City Marketing" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Web Design Cedar City UT | Cedar City Marketing" />
+  <meta name="twitter:description" content="Websites that rank, convert, and grow your Cedar City business." />
+  <meta name="twitter:image" content="https://www.cedarcitymarketing.com/brand_assets/CCM%20Logo-3.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does a website cost in Cedar City?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends on what you need. Simple sites start under $750. For something fully custom with multiple pages, processing, automations, and integrations, most projects land between $1,000 and $2,500. Every project is quoted as a flat rate so you know exactly what you're investing before we start."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to build a website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most sites are live within 14 days. Day one is your discovery call. Days 2 through 14 are design, build, and copy. We launch after your final approval. If you have a hard deadline, just let us know upfront."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will my website rank on Google after you build it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every site we build is SEO-ready from launch: that means proper title tags, meta descriptions, schema markup, fast load times, and local keyword targeting for Cedar City and Southern Utah. We don't guarantee specific rankings, but we build the foundation that makes ranking possible."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer support after the site launches?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Ongoing support is included as part of our monthly fee, which covers your domain, hosting, and continued care. As long as you're a client, we're in your corner: refreshing content, making tweaks, and keeping your site working hard for your business."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you work with businesses outside Cedar City?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We work with businesses throughout Southern Utah and are happy to help clients anywhere across the nation. We're Cedar City-based, so Southern Utah is our home turf, but building great websites for businesses outside the region is something we do as well."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Cedar City Marketing – Web Design",
+    "description": "Professional web design and SEO services for local businesses in Cedar City, St. George, and Southern Utah.",
+    "url": "https://www.cedarcitymarketing.com/web-design",
+    "telephone": "+14352336029",
+    "email": "brian@cedarcitymarketing.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cedar City",
+      "addressRegion": "UT",
+      "postalCode": "84720",
+      "addressCountry": "US"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Cedar City" },
+      { "@type": "City", "name": "St. George" },
+      { "@type": "State", "name": "Utah" }
+    ],
+    "serviceType": ["Web Design", "SEO", "Local SEO", "Website Development"],
+    "priceRange": "$$",
+    "logo": "https://www.cedarcitymarketing.com/brand_assets/CCM_Logo.png"
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ── Design tokens ── */
+    :root {
+      --bg:      #0e1519;
+      --red:     #B63D2B;
+      --red-dk:  #8f2e1e;
+      --red-lt:  #d4503b;
+      --canyon:  #1F2A30;
+      --sand:    #F4EDE4;
+      --sand-dk: #e8ddd2;
+      --white:   #FFFFFF;
+      --silver:  #ddd5c8;
+      --accent:  #B63D2B;
+      --grain-opacity: 0.18;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Open Sans', sans-serif; color: var(--canyon); background: var(--white); overflow-x: hidden; }
+    h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; }
+
+    /* ── Nav ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      background: rgba(14,21,25,0.92);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(221,213,200,0.07);
+    }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 2rem; height: 84px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo img { height: 68px; width: auto; max-width: 300px; }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a { color: rgba(221,213,200,0.65); text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--silver); }
+    .nav-cta { background: var(--red) !important; color: white !important; padding: 0.48rem 1.25rem; border-radius: 6px; }
+    .nav-cta:hover { background: var(--red-lt) !important; color: white !important; }
+    .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+    .nav-toggle span { display: block; width: 24px; height: 2px; background: rgba(221,213,200,0.75); border-radius: 2px; }
+    @media(max-width:768px){ .nav-links { display: none; } .nav-toggle { display: flex; } }
+
+    /* ══════════════════════════════
+       HALIDE HERO
+    ══════════════════════════════ */
+    .halide-hero {
+      position: relative;
+      height: 100vh;
+      min-height: 680px;
+      background-color: var(--bg);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* grain overlay */
+    .halide-grain {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 50;
+      opacity: var(--grain-opacity);
+      filter: url(#grain);
+    }
+
+    /* 3D perspective viewport */
+    .h-viewport {
+      position: absolute;
+      inset: 0;
+      perspective: 2000px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .canvas-3d {
+      position: relative;
+      width: 900px;
+      height: 450px;
+      transform-style: preserve-3d;
+      /* starting state — entrance anim in JS */
+      opacity: 0;
+      transform: rotateX(90deg) rotateZ(0deg) scale(0.8);
+    }
+
+    .h-layer {
+      position: absolute;
+      inset: 0;
+      border: 1px solid rgba(221,213,200,0.08);
+      background-size: cover;
+      background-position: center top;
+      transition: transform 0.4s cubic-bezier(0.16,1,0.3,1);
+    }
+
+    .h-layer-1 {
+      background-image: url('/web-design/Elevatedscreenshothero.png');
+      filter: grayscale(0.85) contrast(1.25) brightness(0.38);
+    }
+    .h-layer-2 {
+      background: radial-gradient(ellipse at 25% 55%, rgba(182,61,43,0.65) 0%, transparent 55%),
+                  radial-gradient(ellipse at 80% 25%, rgba(143,46,30,0.45) 0%, transparent 50%),
+                  radial-gradient(ellipse at 55% 90%, rgba(31,42,48,0.5) 0%, transparent 55%);
+      mix-blend-mode: color-dodge;
+      opacity: 0.7;
+    }
+    .h-layer-3 {
+      background-image: url('/web-design/Elevatedscreenshothero.png');
+      filter: grayscale(0.3) contrast(1.1) brightness(0.9);
+      opacity: 0.22;
+      mix-blend-mode: screen;
+    }
+
+    /* topographic contour lines */
+    .h-contours {
+      position: absolute;
+      width: 200%; height: 200%;
+      top: -50%; left: -50%;
+      background-image: repeating-radial-gradient(
+        circle at 50% 50%,
+        transparent 0,
+        transparent 44px,
+        rgba(221,213,200,0.04) 45px,
+        transparent 46px
+      );
+      transform: translateZ(80px);
+      pointer-events: none;
+    }
+
+    /* interface overlay */
+    .h-interface {
+      position: absolute;
+      inset: 0;
+      padding: 7rem 3.5rem 3.5rem;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      z-index: 60;
+      pointer-events: none;
+    }
+
+    .h-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .h-brand-tag {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(221,213,200,0.55);
+    }
+    .h-coords {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--red-lt);
+      text-align: right;
+      line-height: 1.8;
+    }
+
+    /* BIG title */
+    .h-title {
+      font-family: 'Syncopate', sans-serif;
+      font-weight: 700;
+      font-size: clamp(3.5rem, 9vw, 9rem);
+      line-height: 0.88;
+      letter-spacing: -0.03em;
+      color: var(--silver);
+      mix-blend-mode: difference;
+      align-self: center;
+      pointer-events: none;
+      user-select: none;
+    }
+    .h-title em {
+      font-style: normal;
+      color: #B63D2B;
+    }
+
+    /* bottom row */
+    .h-bottom-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .h-caption {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      line-height: 1.9;
+      color: rgba(221,213,200,0.45);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .h-cta {
+      pointer-events: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      background: var(--silver);
+      color: var(--bg);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 1rem 1.75rem;
+      clip-path: polygon(0 0, 100% 0, 100% 68%, 92% 100%, 0 100%);
+      transition: background 0.25s, transform 0.2s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    .h-cta:hover { background: #f0a090; transform: translateY(-4px); }
+    .h-cta:active { transform: translateY(0); }
+    .h-cta:focus-visible { outline: 2px solid var(--red); outline-offset: 4px; }
+
+    /* scroll line */
+    .h-scroll-line {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      width: 1px;
+      height: 56px;
+      background: linear-gradient(to bottom, rgba(221,213,200,0.5), transparent);
+      z-index: 60;
+      animation: flowLine 2.2s ease-in-out infinite;
+    }
+    @keyframes flowLine {
+      0%, 100% { transform: scaleY(0); transform-origin: top; }
+      49%  { transform: scaleY(1); transform-origin: top; }
+      51%  { transform: scaleY(1); transform-origin: bottom; }
+    }
+
+    /* ── Sections ── */
+    .section { padding: 6rem 2rem; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+    .section-label { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--red); margin-bottom: 0.75rem; }
+    .section-title { font-size: clamp(1.9rem, 3.5vw, 2.9rem); font-weight: 900; letter-spacing: -0.035em; line-height: 1.12; color: var(--canyon); margin: 0 0 1rem; }
+    .section-title em { font-style: normal; color: var(--red); }
+    .section-sub { font-size: 1.05rem; line-height: 1.8; color: rgba(31,42,48,0.6); max-width: 560px; }
+
+    /* ── Choice cards ── */
+    .choice-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 3.5rem; }
+    .choice-card {
+      background: var(--white);
+      border: 2px solid rgba(31,42,48,0.08);
+      border-radius: 20px;
+      padding: 2.25rem 2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+      transition: border-color 0.25s, transform 0.22s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.25s;
+    }
+    .choice-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--red);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    .choice-card:hover { border-color: rgba(182,61,43,0.3); transform: translateY(-5px); box-shadow: 0 8px 16px rgba(31,42,48,0.06), 0 24px 48px rgba(31,42,48,0.1); }
+    .choice-card:hover::before { transform: scaleX(1); }
+    .choice-card:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+    .choice-icon { width: 52px; height: 52px; background: rgba(182,61,43,0.09); border-radius: 14px; display: flex; align-items: center; justify-content: center; color: var(--red); margin-bottom: 1.4rem; }
+    .choice-card h3 { font-size: 1.25rem; font-weight: 800; letter-spacing: -0.025em; color: var(--canyon); margin: 0 0 0.5rem; }
+    .choice-tagline { font-size: 0.88rem; font-style: italic; color: rgba(31,42,48,0.5); margin: 0 0 1rem; line-height: 1.55; }
+    .choice-card p { font-size: 0.93rem; line-height: 1.75; color: rgba(31,42,48,0.65); margin: 0 0 1.5rem; flex: 1; }
+    .choice-fits { margin: 0 0 1.75rem; }
+    .choice-fits span { display: inline-block; background: #F4EDE4; color: rgba(31,42,48,0.65); font-size: 0.75rem; font-family: 'Montserrat', sans-serif; font-weight: 600; padding: 0.25rem 0.65rem; border-radius: 100px; margin: 0.2rem 0.2rem 0 0; }
+    .choice-link { display: inline-flex; align-items: center; gap: 0.45rem; color: var(--red); font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.88rem; margin-top: auto; transition: gap 0.15s cubic-bezier(0.34,1.56,0.64,1); }
+    .choice-link:hover { gap: 0.7rem; }
+    .choice-card.featured { background: var(--canyon); border-color: transparent; }
+    .choice-card.featured::before { background: #e07060; }
+    .choice-card.featured h3 { color: var(--sand); }
+    .choice-card.featured .choice-tagline { color: rgba(244,237,228,0.5); }
+    .choice-card.featured p { color: rgba(244,237,228,0.62); }
+    .choice-card.featured .choice-fits span { background: rgba(244,237,228,0.1); color: rgba(244,237,228,0.6); }
+    .choice-card.featured .choice-icon { background: rgba(224,112,96,0.15); color: #e07060; }
+    .choice-card.featured .choice-link { color: #e07060; }
+
+    /* ── Features ── */
+    .features-bg { background: #F4EDE4; }
+    .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; margin-top: 3rem; }
+    .feature-item { display: flex; gap: 1rem; align-items: flex-start; padding: 1.5rem; background: var(--white); border-radius: 14px; border: 1px solid rgba(31,42,48,0.07); box-shadow: 0 2px 4px rgba(31,42,48,0.04), 0 8px 20px rgba(31,42,48,0.05); }
+    .feature-check { width: 36px; height: 36px; border-radius: 10px; background: rgba(182,61,43,0.1); display: flex; align-items: center; justify-content: center; color: var(--red); flex-shrink: 0; }
+    .feature-text h4 { font-family: 'Montserrat', sans-serif; font-size: 0.92rem; font-weight: 800; color: var(--canyon); margin: 0 0 0.3rem; }
+    .feature-text p { font-size: 0.83rem; line-height: 1.65; color: rgba(31,42,48,0.58); margin: 0; }
+
+    /* ── Work showcase ── */
+    .work-showcase { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-top: 3.5rem; }
+    @media(max-width:768px){ .work-showcase { grid-template-columns: 1fr; gap: 2.5rem; } }
+    .browser-frame { border-radius: 16px; overflow: hidden; box-shadow: 0 4px 8px rgba(31,42,48,0.08), 0 24px 64px rgba(31,42,48,0.18), 0 0 0 1px rgba(31,42,48,0.08); }
+    .browser-chrome { background: #f0f0f0; padding: 0.6rem 1rem; display: flex; align-items: center; gap: 0.5rem; border-bottom: 1px solid #ddd; }
+    .browser-dots { display: flex; gap: 6px; }
+    .browser-dots span { width: 10px; height: 10px; border-radius: 50%; }
+    .browser-dots span:nth-child(1) { background: #ff5f57; }
+    .browser-dots span:nth-child(2) { background: #ffbe2e; }
+    .browser-dots span:nth-child(3) { background: #28ca42; }
+    .browser-bar { flex: 1; background: white; border-radius: 6px; padding: 0.25rem 0.75rem; font-size: 0.72rem; color: #888; font-family: monospace; border: 1px solid #e0e0e0; }
+    .browser-frame img { display: block; width: 100%; height: auto; }
+    .work-client-tag { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(182,61,43,0.1); border: 1px solid rgba(182,61,43,0.2); color: var(--red); font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.35rem 0.9rem; border-radius: 100px; margin-bottom: 1.25rem; }
+    .work-info h3 { font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 900; letter-spacing: -0.03em; line-height: 1.15; color: var(--canyon); margin: 0 0 1rem; }
+    .work-info p { font-size: 1rem; line-height: 1.8; color: rgba(31,42,48,0.62); margin: 0 0 1.75rem; }
+    .work-stats { display: flex; gap: 2rem; flex-wrap: wrap; }
+    .work-stat strong { display: block; font-family: 'Montserrat', sans-serif; font-size: 1.6rem; font-weight: 900; color: var(--canyon); letter-spacing: -0.04em; }
+    .work-stat span { font-size: 0.82rem; color: rgba(31,42,48,0.5); }
+
+    /* ── Process ── */
+    .process-bg { background: var(--canyon); }
+    .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; margin-top: 3.5rem; }
+    .process-step { position: relative; padding-left: 1.5rem; }
+    .process-step::before { content: ''; position: absolute; top: 1.4rem; left: 0; width: 2px; height: calc(100% - 1.4rem); background: rgba(244,237,228,0.1); }
+    .process-num { width: 44px; height: 44px; border-radius: 12px; background: rgba(182,61,43,0.22); display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1rem; color: #e07060; margin-bottom: 1.25rem; border: 1px solid rgba(182,61,43,0.35); }
+    .process-step h3 { font-size: 1.1rem; font-weight: 800; color: var(--sand); margin: 0 0 0.6rem; letter-spacing: -0.02em; }
+    .process-step p { font-size: 0.92rem; line-height: 1.75; color: rgba(244,237,228,0.55); margin: 0; }
+    .process-time { display: inline-block; font-size: 0.72rem; font-family: 'Montserrat', sans-serif; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(224,112,96,0.7); margin-top: 0.75rem; }
+
+    /* ── Local SEO ── */
+    .kw-chips { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1.75rem 0; }
+    .kw-chip { background: rgba(182,61,43,0.07); border: 1px solid rgba(182,61,43,0.2); color: var(--red); font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.78rem; letter-spacing: 0.06em; padding: 0.4rem 0.9rem; border-radius: 100px; }
+    .local-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    @media(max-width:768px){ .local-two-col { grid-template-columns: 1fr; gap: 2.5rem; } }
+    .local-points { list-style: none; padding: 0; margin: 1.5rem 0 0; }
+    .local-points li { display: flex; gap: 0.85rem; align-items: flex-start; margin-bottom: 1.1rem; font-size: 0.95rem; line-height: 1.7; color: rgba(31,42,48,0.68); }
+    .local-points li svg { color: var(--red); flex-shrink: 0; margin-top: 3px; }
+    .local-map-card { background: #F4EDE4; border-radius: 20px; padding: 2.5rem; text-align: center; border: 1px solid rgba(31,42,48,0.07); box-shadow: 0 4px 8px rgba(31,42,48,0.04), 0 16px 40px rgba(31,42,48,0.08); }
+    .local-map-card .pin-icon { width: 56px; height: 56px; background: rgba(182,61,43,0.12); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; color: var(--red); }
+    .local-map-card h3 { font-size: 1.2rem; font-weight: 800; color: var(--canyon); margin: 0 0 0.6rem; letter-spacing: -0.025em; }
+    .local-map-card p { font-size: 0.9rem; line-height: 1.7; color: rgba(31,42,48,0.58); margin: 0; }
+    .local-cities { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-top: 1.25rem; }
+    .local-cities span { background: rgba(182,61,43,0.09); color: var(--red); font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 0.75rem; padding: 0.3rem 0.7rem; border-radius: 100px; }
+
+    /* ── CTA Band ── */
+    .cta-band { background: var(--canyon); padding: 6.5rem 2rem; text-align: center; position: relative; overflow: hidden; }
+    .cta-band::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 25% 50%, rgba(182,61,43,0.38) 0%, transparent 55%), radial-gradient(ellipse at 80% 55%, rgba(143,46,30,0.22) 0%, transparent 48%); pointer-events: none; }
+    .cta-inner { position: relative; z-index: 1; }
+    .cta-band h2 { font-size: clamp(2rem, 4.5vw, 3.4rem); font-weight: 900; letter-spacing: -0.04em; color: var(--sand); margin: 0 0 1rem; line-height: 1.08; }
+    .cta-band h2 em { font-style: normal; color: #e07060; }
+    .cta-band p { font-size: 1.05rem; line-height: 1.8; color: rgba(244,237,228,0.58); max-width: 520px; margin: 0 auto 2.75rem; }
+    .cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--red); color: white; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.9rem; letter-spacing: 0.02em; padding: 0.9rem 2rem; border-radius: 8px; text-decoration: none; box-shadow: 0 4px 24px rgba(182,61,43,0.45); transition: background 0.2s, transform 0.15s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s; }
+    .btn-primary:hover { background: var(--red-lt); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(182,61,43,0.5); }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-white { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--sand); color: var(--canyon); font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.9rem; letter-spacing: 0.02em; padding: 0.9rem 2rem; border-radius: 8px; text-decoration: none; transition: background 0.2s, transform 0.15s cubic-bezier(0.34,1.56,0.64,1); }
+    .btn-white:hover { background: white; transform: translateY(-2px); }
+    .btn-outline-light { display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: rgba(244,237,228,0.78); font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.9rem; letter-spacing: 0.02em; padding: 0.9rem 2rem; border-radius: 8px; text-decoration: none; border: 1.5px solid rgba(244,237,228,0.28); transition: border-color 0.2s, color 0.2s, transform 0.15s cubic-bezier(0.34,1.56,0.64,1); }
+    .btn-outline-light:hover { border-color: rgba(244,237,228,0.65); color: var(--sand); transform: translateY(-2px); }
+
+    /* ── Footer ── */
+    footer { background: var(--bg); border-top: 1px solid rgba(221,213,200,0.07); padding: 2.5rem 2rem; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+    footer p { color: rgba(221,213,200,0.38); font-size: 0.82rem; }
+    .footer-links { display: flex; gap: 1.5rem; }
+    .footer-links a { color: rgba(221,213,200,0.5); text-decoration: none; font-size: 0.82rem; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--silver); }
+
+    /* mobile nav open */
+    .nav-mobile-open { display: flex !important; flex-direction: column; position: absolute; top: 84px; left: 0; right: 0; background: rgba(14,21,25,0.98); padding: 1.5rem 2rem; gap: 1.25rem; border-bottom: 1px solid rgba(221,213,200,0.08); z-index: 190; }
+
+    /* responsive hero adjustments */
+    @media(max-width: 640px) {
+      .h-interface { padding: 6rem 1.75rem 2.5rem; }
+      .h-title { font-size: clamp(2.8rem, 14vw, 5rem); }
+      .h-coords { display: none; }
+    }
+
+    /* ── Nav services dropdown ── */
+    .nav-item-services { position: relative; }
+    .nav-dropdown { display: none; position: absolute; top: 100%; left: 0; transform: none; margin-top: 0; background: rgba(18,25,31,0.98); backdrop-filter: blur(16px); border: 1px solid rgba(244,237,228,0.1); border-radius: 12px; padding: 0.4rem; list-style: none; margin: 0; min-width: 190px; box-shadow: 0 8px 40px rgba(0,0,0,0.3), 0 2px 8px rgba(0,0,0,0.2); z-index: 200; }
+    .nav-item-services:hover .nav-dropdown { display: block; } .nav-dropdown::before { content:""; position:absolute; top:-8px; left:0; right:0; height:8px; }
+    .nav-dropdown li a { display: block; padding: 0.48rem 0.85rem; border-radius: 6px; color: rgba(244,237,228,0.72); font-family: 'Montserrat',sans-serif; font-weight: 600; font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; white-space: nowrap; transition: background 0.15s ease, color 0.15s ease; }
+    .nav-dropdown li a:hover { background: rgba(182,61,43,0.18); color: rgba(244,237,228,0.95); }
+    .nav-services-toggle { display: flex !important; align-items: center; gap: 0.35rem; }
+    .nav-caret { transition: transform 0.2s ease; flex-shrink: 0; }
+    .nav-item-services:hover .nav-caret { transform: rotate(180deg); }
+
+    /* ── FAQ Accordion ── */
+    .faq-section { padding: 6rem 2rem; background: var(--sand); }
+    .faq-inner { max-width: 800px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid rgba(31,42,48,0.12); }
+    .faq-item:first-of-type { border-top: 1px solid rgba(31,42,48,0.12); }
+    .faq-trigger {
+      width: 100%; background: none; border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+      padding: 1.5rem 0; text-align: left;
+      font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1rem;
+      letter-spacing: -0.01em; color: var(--canyon);
+    }
+    .faq-trigger:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; border-radius: 4px; }
+    .faq-trigger:hover { color: var(--red); }
+    .faq-chevron { flex-shrink: 0; color: var(--red); transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1); }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+    .faq-body { display: none; padding-bottom: 1.5rem; }
+    .faq-item.open .faq-body { display: block; }
+    .faq-body p { font-size: 0.97rem; line-height: 1.78; color: rgba(31,42,48,0.7); margin: 0; }
+  </style>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QV3VRVFFLL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QV3VRVFFLL');
+    gtag('config', 'AW-18245739484');
+  </script>
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+    (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','1291450966103691');fbq('track','PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1291450966103691&ev=PageView&noscript=1"/></noscript>
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav>
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo" aria-label="Cedar City Marketing home">
+        <img src="../brand_assets/CCM Logo-4.png" alt="Cedar City Marketing" />
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li class="nav-item-services">
+          <a href="/services" class="nav-services-toggle">Services <svg class="nav-caret" width="11" height="7" viewBox="0 0 11 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1,1 5.5,6 10,1"/></svg></a>
+          <ul class="nav-dropdown">
+            <li><a href="/get-found">Local SEO</a></li>
+            <li><a href="/get-customers">Paid Ads</a></li>
+            <li><a href="/get-reviews">Reputation</a></li>
+            <li><a href="/web-design">Web Design</a></li>
+            <li><a href="/services">Social Media</a></li>
+            <li><a href="/services">Email Marketing</a></li>
+            <li><a href="/services">AI Marketing</a></li>
+            <li><a href="/services">Analytics</a></li>
+          </ul>
+        </li>
+        <li><a href="../get-found.html">SEO</a></li>
+        <li><a href="../get-customers.html">Paid Ads</a></li>
+        <li><a href="../team.html">Team</a></li>
+        <li><a href="../book-a-call.html" class="nav-cta">Book a Call</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Open menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════
+       HALIDE-STYLE HERO
+  ══════════════════════════════ -->
+  <section class="halide-hero" aria-label="Hero">
+
+    <!-- SVG grain filter -->
+    <svg style="position:absolute;width:0;height:0;" aria-hidden="true">
+      <filter id="grain">
+        <feTurbulence type="fractalNoise" baseFrequency="0.68" numOctaves="3" />
+        <feColorMatrix type="saturate" values="0" />
+      </filter>
+    </svg>
+    <div class="halide-grain" aria-hidden="true"></div>
+
+    <!-- 3D perspective viewport -->
+    <div class="h-viewport" aria-hidden="true">
+      <div class="canvas-3d" id="canvas3d">
+        <div class="h-layer h-layer-1" id="hlayer1"></div>
+        <div class="h-layer h-layer-2" id="hlayer2"></div>
+        <div class="h-layer h-layer-3" id="hlayer3"></div>
+        <div class="h-contours"></div>
+      </div>
+    </div>
+
+    <!-- Interface overlay -->
+    <div class="h-interface">
+
+      <div class="h-top-bar">
+        <div class="h-brand-tag">Cedar City Marketing</div>
+        <div class="h-coords">
+          <div>LATITUDE: 37.6775° N</div>
+          <div>WEB DESIGN · SEO · SOUTHERN UTAH</div>
+        </div>
+      </div>
+
+      <h1 class="h-title">
+        CEDAR CITY<br />WEB<br /><em>DESIGN.</em>
+      </h1>
+
+      <div class="h-bottom-row">
+        <div class="h-caption">
+          [ CEDAR CITY, UT 84720 ]<br />
+          WEB DESIGN · SEO · LEAD GENERATION
+        </div>
+        <a href="/web-design/get-started" class="h-cta">
+          Get a Free Audit
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="h-scroll-line" aria-hidden="true"></div>
+  </section>
+
+  <!-- ══════════════════════════════
+       ASSUMED SALE: CHOOSE YOUR WEBSITE
+  ══════════════════════════════ -->
+  <section class="section" id="choose" style="background:var(--white);">
+    <div class="section-inner">
+      <p class="section-label">Choose Your Direction</p>
+      <h2 class="section-title">What do you want your<br />website to <em>do for you?</em></h2>
+      <p class="section-sub">
+        Skip the guesswork. Tell us what outcome matters most. We'll build the site around it.
+      </p>
+
+      <div class="choice-grid">
+
+        <a href="/web-design/get-started" class="choice-card">
+          <div class="choice-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <h3>The Authority Site</h3>
+          <p class="choice-tagline">"I want to look like the obvious choice before they even call."</p>
+          <p>Premium design, social proof front and center, and storytelling that builds trust before a single conversation. Visitors leave knowing exactly why you're the top choice in Southern Utah.</p>
+          <div class="choice-fits">
+            <span>Builders &amp; Designers</span>
+            <span>Restaurants</span>
+            <span>Boutiques</span>
+            <span>Studios</span>
+          </div>
+          <span class="choice-link">
+            This is what I need
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </span>
+        </a>
+
+        <a href="/web-design/get-started" class="choice-card featured">
+          <div class="choice-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+          </div>
+          <h3>The Rebuild</h3>
+          <p class="choice-tagline">"I have a website. I'm just embarrassed to send people to it."</p>
+          <p>Your existing site is costing you credibility. We strip it down and rebuild from scratch: faster, sharper, and designed to actually convert the traffic you're already getting.</p>
+          <div class="choice-fits">
+            <span>Established Businesses</span>
+            <span>Retail &amp; Shops</span>
+            <span>Professional Services</span>
+          </div>
+          <span class="choice-link">
+            This is what I need
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </span>
+        </a>
+
+        <a href="/web-design/get-started" class="choice-card">
+          <div class="choice-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.82 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.77 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <h3>The Lead Machine</h3>
+          <p class="choice-tagline">"I want my phone ringing and my inbox full, automatically."</p>
+          <p>Built around calls-to-action, lead capture forms, and local SEO. Every page has one job: turn a visitor into an inquiry. For service businesses that live by inbound leads.</p>
+          <div class="choice-fits">
+            <span>Contractors</span>
+            <span>Healthcare</span>
+            <span>Real Estate</span>
+            <span>Home Services</span>
+          </div>
+          <span class="choice-link">
+            This is what I need
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       WHAT'S INCLUDED
+  ══════════════════════════════ -->
+  <section class="section features-bg" id="included">
+    <div class="section-inner">
+      <p class="section-label">Every Site We Build</p>
+      <h2 class="section-title">Your new website comes<br /><em>ready to work on day one.</em></h2>
+      <p class="section-sub">
+        No hidden add-ons. No stripped-down starter templates. Every site ships with the full stack of what it takes to rank and convert.
+      </p>
+
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="feature-text">
+            <h4>Local SEO Built In</h4>
+            <p>Schema markup, Google Business optimization, and location-targeted pages from day one.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="feature-text">
+            <h4>Mobile-First Design</h4>
+            <p>Over 70% of local searches happen on phones. Your site converts great on every screen.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="feature-text">
+            <h4>Speed Optimized</h4>
+            <p>Fast-loading pages that pass Google's Core Web Vitals. Slow sites rank lower and lose customers.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="feature-text">
+            <h4>Conversion-Focused Layout</h4>
+            <p>CTAs and page flow engineered to move visitors toward calling or booking, not just browsing.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="feature-text">
+            <h4>Analytics &amp; Tracking</h4>
+            <p>Google Analytics 4, Search Console, and goal tracking so you know where leads are coming from.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="feature-text">
+            <h4>Contact &amp; Booking Forms</h4>
+            <p>Custom forms tied to your email and CRM. Every lead lands where you can act on it.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="feature-text">
+            <h4>SSL &amp; Security</h4>
+            <p>HTTPS, secure hosting, and monthly backups so your site stays online and protected.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="feature-text">
+            <h4>Ongoing Support</h4>
+            <p>Domain, hosting, and continued care are bundled into a simple monthly fee. We refresh content and make tweaks as long as you're a client.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       OUR WORK
+  ══════════════════════════════ -->
+  <section class="section" id="our-work" style="background:var(--white);">
+    <div class="section-inner">
+      <p class="section-label">Our Work</p>
+      <h2 class="section-title">Built for Southern Utah<br /><em>businesses like yours.</em></h2>
+
+      <div class="work-showcase">
+        <div class="browser-frame">
+          <div class="browser-chrome">
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+            <div class="browser-bar">elevatedcustomhomes.com</div>
+          </div>
+          <img src="/web-design/Elevatedscreenshothero.png" alt="Elevated Custom Homes website, built by Cedar City Marketing" loading="lazy" />
+        </div>
+
+        <div class="work-info">
+          <div class="work-client-tag">
+            <svg width="8" height="8" viewBox="0 0 8 8" fill="currentColor" aria-hidden="true"><circle cx="4" cy="4" r="4"/></svg>
+            Client Project · Cedar City, UT
+          </div>
+          <h3>Elevated Custom Homes</h3>
+          <p>
+            A luxury custom home builder needed a website that matched the quality of their builds.
+            We designed and built a premium, fast-loading site with an immersive hero, full portfolio showcase,
+            and lead capture that positions them as the top-tier choice in Southern Utah.
+          </p>
+          <div class="work-stats">
+            <div class="work-stat">
+              <strong>100%</strong>
+              <span>Custom design</span>
+            </div>
+            <div class="work-stat">
+              <strong>&lt;2s</strong>
+              <span>Load time</span>
+            </div>
+            <div class="work-stat">
+              <strong>Mobile</strong>
+              <span>First &amp; SEO-ready</span>
+            </div>
+          </div>
+          <br />
+          <a href="/web-design/get-started" class="btn-primary" style="margin-top:1.5rem;">
+            Build Mine Next
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       PROCESS
+  ══════════════════════════════ -->
+  <section class="section process-bg" id="process">
+    <div class="section-inner">
+      <p class="section-label" style="color:rgba(224,112,96,0.75);">How It Works</p>
+      <h2 class="section-title" style="color:var(--sand);">From idea to live site<br /><em style="color:#B63D2B;">in three steps.</em></h2>
+      <p class="section-sub" style="color:rgba(244,237,228,0.52);">
+        No drawn-out timelines or disappearing contractors. We move fast and keep you in the loop the whole way.
+      </p>
+
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="process-num">01</div>
+          <h3>Discovery Call</h3>
+          <p>We learn your business, your goals, and who you're trying to reach. You tell us what a win looks like. We take it from there.</p>
+          <span class="process-time">Day 1</span>
+        </div>
+        <div class="process-step">
+          <div class="process-num">02</div>
+          <h3>Design &amp; Build</h3>
+          <p>We design, write copy, and build your site with SEO and conversions baked in from the start. You approve each milestone. No surprises.</p>
+          <span class="process-time">Days 2–14</span>
+        </div>
+        <div class="process-step">
+          <div class="process-num">03</div>
+          <h3>Launch &amp; Optimize</h3>
+          <p>We go live, submit to Google, and monitor your rankings. Your site is built to compound over time, not just look good on launch day.</p>
+          <span class="process-time">Day 15+</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       LOCAL SEO SECTION
+  ══════════════════════════════ -->
+  <section class="section" id="cedar-city-web-design" style="background:var(--white);">
+    <div class="section-inner">
+      <div class="local-two-col">
+        <div>
+          <p class="section-label">Serving Southern Utah</p>
+          <h2 class="section-title">The web design team<br /><em>Cedar City searches for.</em></h2>
+          <div class="kw-chips">
+            <span class="kw-chip">Web Design Cedar City</span>
+            <span class="kw-chip">Cedar City SEO</span>
+            <span class="kw-chip">SEO Cedar City</span>
+            <span class="kw-chip">Cedar City Website Builder</span>
+            <span class="kw-chip">Southern Utah Web Design</span>
+          </div>
+          <p style="font-size:1rem;line-height:1.8;color:rgba(31,42,48,0.62);margin:0 0 0.75rem;">
+            We're a Cedar City-based marketing team. That means we understand the Southern Utah market, the local competition, and exactly what it takes to rank above them on Google.
+          </p>
+          <p style="font-size:1rem;line-height:1.8;color:rgba(31,42,48,0.62);margin:0;">
+            Whether you need <strong style="color:var(--canyon);">web design in Cedar City</strong>, a full SEO overhaul, or a brand-new site built from scratch, you found the right team.
+          </p>
+          <ul class="local-points">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              We rank Cedar City businesses on the first page of Google.
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              We know the Southern Utah market, not just web design best practices.
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              One team. One point of contact. No outsourcing.
+            </li>
+          </ul>
+        </div>
+
+        <div class="local-map-card">
+          <div class="pin-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Locally Based.<br />Regionally Proven.</h3>
+          <p>We work with businesses across Cedar City, St. George, and all of Southern Utah. If you're local, you're our priority.</p>
+          <div class="local-cities">
+            <span>Cedar City</span>
+            <span>St. George</span>
+            <span>Parowan</span>
+            <span>Hurricane</span>
+            <span>Brian Head</span>
+            <span>Kanab</span>
+          </div>
+          <br />
+          <a href="tel:+14352336029" style="display:inline-flex;align-items:center;gap:0.5rem;color:var(--red);font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.9rem;text-decoration:none;margin-top:0.5rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.82 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.77 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            (435) 233-6029
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       FAQ
+  ══════════════════════════════ -->
+  <section class="faq-section">
+    <div class="faq-inner">
+      <p class="section-label" style="margin-bottom:0.75rem;">Common Questions</p>
+      <h2 class="section-title" style="margin-bottom:3rem;">Web design questions,<br /><em style="font-style:normal;color:var(--red);">answered honestly.</em></h2>
+
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          How much does a website cost in Cedar City?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5,8 10,13 15,8"/></svg>
+        </button>
+        <div class="faq-body" role="region">
+          <p>It depends on what you need. Simple sites start under $750. For something fully custom with multiple pages, processing, automations, and integrations, most projects land between $1,000 and $2,500. Every project is quoted as a flat rate so you know exactly what you're investing before we start.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          How long does it take to build a website?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5,8 10,13 15,8"/></svg>
+        </button>
+        <div class="faq-body" role="region">
+          <p>Most sites are live within 14 days. Day one is your discovery call. Days 2 through 14 are design, build, and copy. We launch after your final approval. If you have a hard deadline, just let us know upfront.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          Will my website rank on Google after you build it?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5,8 10,13 15,8"/></svg>
+        </button>
+        <div class="faq-body" role="region">
+          <p>Every site we build is SEO-ready from launch: that means proper title tags, meta descriptions, schema markup, fast load times, and local keyword targeting for Cedar City and Southern Utah. We don't guarantee specific rankings (no ethical agency does), but we build the foundation that makes ranking possible. Ongoing SEO services are available if you want to keep climbing.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          Do you offer support after the site launches?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5,8 10,13 15,8"/></svg>
+        </button>
+        <div class="faq-body" role="region">
+          <p>Yes. Ongoing support is included as part of our monthly fee, which covers your domain, hosting, and continued care. As long as you're a client, we're in your corner: refreshing content, making tweaks, and keeping your site working hard for your business.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          Do you work with businesses outside Cedar City?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5,8 10,13 15,8"/></svg>
+        </button>
+        <div class="faq-body" role="region">
+          <p>Yes. We work with businesses throughout all of Southern Utah and are happy to help clients anywhere across the nation. Southern Utah is our home turf, but great websites don't have a zip code requirement.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       CTA BAND
+  ══════════════════════════════ -->
+  <section class="cta-band" id="contact">
+    <div class="cta-inner">
+      <h2>Your competitors already have<br />a website. <em>Yours should win.</em></h2>
+      <p>Book a free 30-minute strategy call. We'll audit your current site, show you what's costing you leads, and map out exactly what we'd build instead.</p>
+      <div class="cta-btns">
+        <a href="/web-design/get-started" class="btn-white">
+          Book a Free Strategy Call
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+        <a href="mailto:brian@cedarcitymarketing.com" class="btn-outline-light">
+          Email Us Instead
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="footer-inner">
+      <p>© 2026 <a href="../index.html" style="color:rgba(221,213,200,0.5);text-decoration:none;">Cedar City Marketing</a>. All rights reserved. · Cedar City, UT 84720</p>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="../get-found.html">SEO</a>
+        <a href="../get-customers.html">Paid Ads</a>
+        <a href="mailto:brian@cedarcitymarketing.com">brian@cedarcitymarketing.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ── FAQ accordion ── */
+    document.querySelectorAll('.faq-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const item = trigger.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-trigger').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          trigger.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+
+  <script>
+    /* ── Mobile nav ── */
+    function toggleMenu() {
+      const links = document.getElementById('nav-links');
+      links.classList.toggle('nav-mobile-open');
+    }
+
+    /* ── Halide 3D parallax hero ── */
+    (function() {
+      const canvas = document.getElementById('canvas3d');
+      const layers = [
+        document.getElementById('hlayer1'),
+        document.getElementById('hlayer2'),
+        document.getElementById('hlayer3'),
+      ];
+
+      if (!canvas) return;
+
+      /* entrance animation */
+      canvas.style.opacity = '0';
+      canvas.style.transform = 'rotateX(90deg) rotateZ(0deg) scale(0.85)';
+
+      const enterTimeout = setTimeout(() => {
+        canvas.style.transition = 'all 2.6s cubic-bezier(0.16, 1, 0.3, 1)';
+        canvas.style.opacity = '1';
+        canvas.style.transform = 'rotateX(55deg) rotateZ(-25deg) scale(1)';
+      }, 350);
+
+      /* mouse parallax */
+      let raf = null;
+      let targetX = 0, targetY = 0;
+      let currentX = 0, currentY = 0;
+
+      function onMouseMove(e) {
+        targetX = (window.innerWidth / 2 - e.clientX) / 28;
+        targetY = (window.innerHeight / 2 - e.clientY) / 28;
+      }
+
+      function lerp(a, b, t) { return a + (b - a) * t; }
+
+      function tick() {
+        currentX = lerp(currentX, targetX, 0.06);
+        currentY = lerp(currentY, targetY, 0.06);
+
+        canvas.style.transform = `rotateX(${55 + currentY * 0.5}deg) rotateZ(${-25 + currentX * 0.5}deg) scale(1)`;
+
+        layers.forEach((layer, i) => {
+          if (!layer) return;
+          const depth = (i + 1) * 16;
+          const mx = currentX * (i + 1) * 0.22;
+          const my = currentY * (i + 1) * 0.22;
+          layer.style.transform = `translateZ(${depth}px) translate(${mx}px, ${my}px)`;
+        });
+
+        raf = requestAnimationFrame(tick);
+      }
+
+      /* only run parallax after entrance */
+      setTimeout(() => {
+        window.addEventListener('mousemove', onMouseMove, { passive: true });
+        tick();
+      }, 2800);
+
+      /* clean up on scroll away (performance) */
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) {
+            window.removeEventListener('mousemove', onMouseMove);
+            if (raf) cancelAnimationFrame(raf);
+          } else {
+            window.addEventListener('mousemove', onMouseMove, { passive: true });
+            if (!raf) tick();
+          }
+        });
+      }, { threshold: 0.1 });
+
+      observer.observe(document.querySelector('.halide-hero'));
+    })();
+  </script>
+  <!-- Cookie Notice -->
+  <div id="cookie-bar" style="position:fixed;bottom:0;left:0;right:0;z-index:9999;background:rgba(14,21,25,0.97);border-top:1px solid rgba(221,213,200,0.08);padding:1rem 2rem;display:none;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
+    <p style="margin:0;font-family:'Open Sans',sans-serif;font-size:0.85rem;color:rgba(221,213,200,0.65);">This site uses cookies for analytics and advertising. <a href="/privacy-policy" style="color:#B63D2B;">Privacy Policy</a></p>
+    <button id="cookie-ok" style="background:#B63D2B;color:white;border:none;padding:0.45rem 1.1rem;border-radius:5px;cursor:pointer;font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.78rem;letter-spacing:0.05em;white-space:nowrap;">Got it</button>
+  </div>
+  <script>
+    if (!localStorage.getItem('cookie-ok')) {
+      document.getElementById('cookie-bar').style.display = 'flex';
+    }
+    document.getElementById('cookie-ok').addEventListener('click', function() {
+      localStorage.setItem('cookie-ok', '1');
+      document.getElementById('cookie-bar').style.display = 'none';
+    });
+  </script>
+</body>
+</html>

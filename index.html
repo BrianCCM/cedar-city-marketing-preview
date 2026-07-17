@@ -1,0 +1,2087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="brand_assets/CCM_Logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marketing Agency in Cedar City, UT | Cedar City Marketing</title>
+  <meta name="description" content="Cedar City Marketing is a local digital marketing agency serving Cedar City, St. George, and all of Southern Utah. SEO, social media, paid ads, web design, and reputation management." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.cedarcitymarketing.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.cedarcitymarketing.com/" />
+  <meta property="og:title" content="Marketing Agency in Cedar City, UT | Cedar City Marketing" />
+  <meta property="og:description" content="Local digital marketing agency serving Cedar City, St. George, and Southern Utah. SEO, paid ads, social media, and more." />
+  <meta property="og:image" content="https://www.cedarcitymarketing.com/brand_assets/CCM%20Logo-3.png" />
+  <meta property="og:site_name" content="Cedar City Marketing" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Marketing Agency in Cedar City, UT | Cedar City Marketing" />
+  <meta name="twitter:description" content="Local digital marketing agency serving Cedar City, St. George, and Southern Utah." />
+  <meta name="twitter:image" content="https://www.cedarcitymarketing.com/brand_assets/CCM%20Logo-3.png" />
+
+  <!-- LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Cedar City Marketing",
+    "description": "Local digital marketing agency serving Cedar City, St. George, and all of Southern Utah. Services include SEO, social media marketing, paid advertising, web design, and reputation management.",
+    "url": "https://www.cedarcitymarketing.com",
+    "telephone": "+14352336029",
+    "email": "brian@cedarcitymarketing.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cedar City",
+      "addressRegion": "UT",
+      "postalCode": "84720",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.6775,
+      "longitude": -113.0619
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Cedar City", "sameAs": "https://en.wikipedia.org/wiki/Cedar_City,_Utah" },
+      { "@type": "City", "name": "St. George", "sameAs": "https://en.wikipedia.org/wiki/St._George,_Utah" },
+      { "@type": "City", "name": "Parowan" },
+      { "@type": "City", "name": "Hurricane" },
+      { "@type": "State", "name": "Utah" }
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    ],
+    "priceRange": "$$",
+    "currenciesAccepted": "USD",
+    "paymentAccepted": "Cash, Credit Card",
+    "logo": "https://www.cedarcitymarketing.com/brand_assets/CCM_Logo.png",
+    "image": "https://www.cedarcitymarketing.com/brand_assets/CCM%20Logo-3.png",
+    "sameAs": [
+      "https://www.facebook.com/cedarcitymarketing",
+      "https://www.instagram.com/cedarcitymarketing"
+    ],
+    "hasMap": "https://maps.google.com/?q=Cedar+City,+UT+84720",
+    "serviceType": [
+      "Search Engine Optimization",
+      "Social Media Marketing",
+      "Google Ads",
+      "Facebook Ads",
+      "Web Design",
+      "Reputation Management",
+      "Email Marketing",
+      "Local SEO"
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Design tokens ── */
+    :root {
+      --red:       #B63D2B;
+      --red-dk:    #8f2e1e;
+      --red-lt:    #d4503b;
+      --canyon:    #1F2A30;
+      --sand:      #F4EDE4;
+      --sand-dk:   #e8ddd2;
+      --white:     #FFFFFF;
+      --transparent: transparent;
+      /* Aurora warm palette — direct brand reds/sand tones */
+      --aurora-1: #B63D2B;
+      --aurora-2: #d4603d;
+      --aurora-3: #e8a090;
+      --aurora-4: #e8ddd2;
+      --aurora-5: #8f2e1e;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: var(--canyon);
+      background: var(--white);
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; }
+
+    /* ══ AURORA ANIMATION ══ */
+    @keyframes aurora {
+      from { background-position: 50% 50%, 50% 50%; }
+      to   { background-position: 350% 50%, 350% 50%; }
+    }
+
+    @keyframes heroFadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.5; transform: scale(0.8); }
+    }
+
+    /* ── Floating Consult Button ── */
+    @keyframes fcb-spin {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+
+    @keyframes fcb-popup-in {
+      from { opacity: 0; transform: scale(0.88) translateY(16px); }
+      to   { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    @keyframes fcb-popup-out {
+      from { opacity: 1; transform: scale(1) translateY(0); }
+      to   { opacity: 0; transform: scale(0.88) translateY(16px); }
+    }
+
+    #fcb-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(31, 42, 48, 0.35);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      z-index: 200;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+
+    #fcb-backdrop.fcb-open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    #fcb-popup {
+      position: fixed;
+      bottom: 13rem;
+      right: 2rem;
+      z-index: 210;
+      background: var(--sand);
+      border-radius: 24px;
+      padding: 2rem 2.25rem;
+      max-width: 380px;
+      width: calc(100vw - 4rem);
+      box-shadow:
+        0 4px 6px rgba(31,42,48,0.08),
+        0 12px 40px rgba(31,42,48,0.18),
+        0 0 0 1px rgba(31,42,48,0.06);
+      opacity: 0;
+      pointer-events: none;
+      transform: scale(0.88) translateY(16px);
+      transform-origin: bottom right;
+      transition: opacity 0.28s cubic-bezier(0.34, 1.56, 0.64, 1),
+                  transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    #fcb-popup.fcb-open {
+      opacity: 1;
+      pointer-events: auto;
+      transform: scale(1) translateY(0);
+    }
+
+    #fcb-close {
+      position: absolute;
+      top: -3rem;
+      right: 0;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: rgba(244,237,228,0.85);
+      padding: 6px;
+      line-height: 0;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    #fcb-close:hover {
+      color: var(--sand);
+      transform: rotate(90deg);
+    }
+
+    #fcb-popup h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--canyon);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin: 0;
+    }
+
+    .fcb-badge {
+      display: inline-block;
+      border: 2px solid var(--red);
+      color: var(--red);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.85rem;
+      border-radius: 100px;
+      white-space: nowrap;
+    }
+
+    #fcb-popup p {
+      font-size: 0.925rem;
+      line-height: 1.7;
+      color: rgba(31,42,48,0.72);
+      margin: 0.9rem 0 1.4rem;
+    }
+
+    #fcb-cta {
+      display: block;
+      width: 100%;
+      background: var(--red);
+      color: var(--white);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 100px;
+      padding: 0.85rem 1.5rem;
+      cursor: pointer;
+      box-shadow: 0 4px 18px rgba(182,61,43,0.4), 0 1px 4px rgba(0,0,0,0.15);
+      transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+    }
+
+    #fcb-cta:hover {
+      background: var(--red-lt);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(182,61,43,0.45), 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    #fcb-cta:active { transform: translateY(0); }
+
+    #fcb-btn {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 210;
+      width: 128px;
+      height: 128px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 0;
+    }
+
+    @media (min-width: 1024px) {
+      #fcb-btn { width: 160px; height: 160px; }
+    }
+
+    .fcb-ring {
+      position: absolute;
+      inset: 0;
+      animation: fcb-spin 10s linear infinite;
+    }
+
+    .fcb-ring text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20.4px;
+      fill: rgba(31,42,48,0.55);
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .fcb-avatar {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .fcb-avatar-inner {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow:
+        0 0 0 3px var(--red),
+        0 4px 20px rgba(182,61,43,0.35),
+        0 2px 8px rgba(0,0,0,0.2);
+      transition: box-shadow 0.25s ease, transform 0.25s ease;
+    }
+
+    @media (min-width: 1024px) {
+      .fcb-avatar-inner { width: 100px; height: 100px; }
+    }
+
+    #fcb-btn:hover .fcb-avatar-inner {
+      transform: scale(1.06);
+      box-shadow:
+        0 0 0 3px var(--red-lt),
+        0 6px 28px rgba(182,61,43,0.45),
+        0 3px 10px rgba(0,0,0,0.25);
+    }
+
+    .fcb-avatar-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    /* ══ NAV ══ */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(31, 42, 48, 0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(244, 237, 228, 0.08);
+    }
+
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      height: 96px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo img { height: 80px; width: auto; max-width: 360px; }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+      margin: 0; padding: 0;
+    }
+
+    .nav-links a {
+      color: rgba(244, 237, 228, 0.78);
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 0.82rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover { color: var(--sand); }
+
+    .nav-cta {
+      background: var(--red) !important;
+      color: white !important;
+      padding: 0.55rem 1.4rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 12px rgba(182,61,43,0.35), 0 1px 3px rgba(0,0,0,0.2);
+      transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease !important;
+    }
+
+    .nav-cta:hover {
+      background: var(--red-lt) !important;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 18px rgba(182,61,43,0.45), 0 2px 6px rgba(0,0,0,0.2) !important;
+    }
+
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+      background: none;
+      border: none;
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 24px; height: 2px;
+      background: rgba(244,237,228,0.8);
+      border-radius: 2px;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    /* ══ HERO – AURORA ══ */
+    .hero-aurora {
+      position: relative;
+      min-height: 100svh;
+      min-height: 680px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--sand);
+      overflow: hidden;
+      padding-top: 96px;
+    }
+
+    .hero-rock-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url("brand_assets/Mar 9, 2026 at 07_35_57 PM.png");
+      background-size: cover;
+      background-position: center 60%;
+      opacity: 0.13;
+      mix-blend-mode: multiply;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Aurora shimmer — direct brand warm colors, no inversion trick */
+    .aurora-layer {
+      position: absolute;
+      inset: -10px;
+      opacity: 0.55;
+      will-change: transform;
+      pointer-events: none;
+      background-image:
+        repeating-linear-gradient(
+          100deg,
+          var(--aurora-1) 10%,
+          var(--aurora-2) 14%,
+          var(--aurora-3) 19%,
+          var(--aurora-4) 23%,
+          var(--aurora-5) 28%,
+          var(--aurora-1) 33%
+        );
+      background-size: 300%;
+      background-position: 50% 50%;
+      filter: blur(14px);
+      animation: aurora 60s linear infinite;
+      -webkit-mask-image: radial-gradient(ellipse at 100% 0%, black 10%, transparent 70%);
+              mask-image: radial-gradient(ellipse at 100% 0%, black 10%, transparent 70%);
+    }
+
+    /* Second aurora pass — multiply deepens reds against the sand bg */
+    .aurora-layer::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        repeating-linear-gradient(
+          100deg,
+          var(--aurora-5) 10%,
+          var(--aurora-1) 15%,
+          var(--aurora-2) 20%,
+          var(--aurora-3) 25%,
+          var(--aurora-4) 30%,
+          var(--aurora-5) 35%
+        );
+      background-size: 200%;
+      background-position: 50% 50%;
+      animation: aurora 60s linear infinite;
+      background-attachment: fixed;
+      mix-blend-mode: multiply;
+      opacity: 0.45;
+    }
+
+    /* Hero content — centered, animated in */
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.25rem;
+      padding: 2rem 2rem 3rem;
+      text-align: center;
+      max-width: 1060px;
+      animation: heroFadeInUp 0.8s ease-in-out 0.3s both;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: rgba(182,61,43,0.1);
+      border: 1px solid rgba(182,61,43,0.28);
+      color: var(--red);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.4rem 1rem;
+      border-radius: 100px;
+    }
+
+    .hero-eyebrow-dot {
+      width: 6px; height: 6px;
+      background: var(--red);
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    .hero-aurora h1 {
+      font-size: clamp(3.2rem, 7vw, 6rem);
+      font-weight: 900;
+      line-height: 0.95;
+      letter-spacing: -0.05em;
+      color: var(--canyon);
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.2em;
+    }
+
+    .hero-aurora h1 em {
+      font-style: normal;
+      color: var(--red);
+    }
+
+    /* ── Text Rotate ── */
+    .tr-static {
+      white-space: nowrap;
+    }
+
+    .tr-highlight {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--red);
+      color: #fff;
+      border-radius: 0.15em;
+      padding: 0.12em 0.3em;
+      overflow: hidden;
+      position: relative;
+      /* width transitions smoothly as word changes */
+      transition: width 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    /* Ghost sizer — invisible, same text, keeps layout width stable */
+    .tr-sizer {
+      visibility: hidden;
+      position: absolute;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    .tr-chars {
+      display: inline-flex;
+      white-space: nowrap;
+      position: relative;
+    }
+
+    .tr-char {
+      display: inline-block;
+      overflow: hidden;
+      line-height: 1;
+    }
+
+    .tr-char-inner {
+      display: inline-block;
+      transform: translateY(110%);
+      opacity: 0;
+    }
+
+    .tr-char-inner.tr-in {
+      animation: trCharIn 0.45s cubic-bezier(0.34, 1.4, 0.64, 1) forwards;
+    }
+
+    .tr-char-inner.tr-out {
+      animation: trCharOut 0.3s cubic-bezier(0.4, 0, 0.6, 1) forwards;
+    }
+
+    @keyframes trCharIn {
+      from { transform: translateY(110%); opacity: 0; }
+      to   { transform: translateY(0);    opacity: 1; }
+    }
+
+    @keyframes trCharOut {
+      from { transform: translateY(0);     opacity: 1; }
+      to   { transform: translateY(-120%); opacity: 0; }
+    }
+
+    .hero-sub {
+      font-size: 1.15rem;
+      line-height: 1.75;
+      color: rgba(31,42,48,0.65);
+      margin: 0;
+      max-width: 560px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 0.85rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 0.75rem;
+    }
+
+    .btn-hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      background: var(--canyon);
+      color: var(--sand);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.88rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0.8rem 1.6rem;
+      border-radius: 100px;
+      text-decoration: none;
+      border: 1.5px solid rgba(244,237,228,0.15);
+      box-shadow: 0 2px 12px rgba(31,42,48,0.18), 0 1px 3px rgba(0,0,0,0.1);
+      transition: background 0.2s ease, transform 0.18s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .btn-hero-pill:hover {
+      background: var(--red);
+      border-color: var(--red);
+      color: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 28px rgba(182,61,43,0.38), 0 2px 6px rgba(0,0,0,0.12);
+    }
+
+    .btn-hero-pill:active { transform: translateY(0); }
+
+    .btn-hero-icon {
+      display: inline-flex;
+      align-items: center;
+      opacity: 0.8;
+    }
+
+    /* Stats strip below hero content */
+    .hero-stats-strip {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      border-top: 1px solid rgba(31,42,48,0.08);
+      background: rgba(255,255,255,0.55);
+      backdrop-filter: blur(8px);
+      padding: 1.25rem 2rem;
+    }
+
+    .stat-pill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 2.5rem;
+      border-right: 1px solid rgba(31,42,48,0.1);
+    }
+
+    .stat-pill:last-child { border-right: none; }
+
+    .stat-num {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: var(--canyon);
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+
+    .stat-num em {
+      font-style: normal;
+      color: var(--red);
+    }
+
+    .stat-label {
+      font-size: 0.76rem;
+      color: rgba(31,42,48,0.55);
+      font-weight: 500;
+      margin-top: 0.3rem;
+      white-space: nowrap;
+    }
+
+    /* ══ BUTTONS ══ */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--red);
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.02em;
+      padding: 0.9rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(182,61,43,0.35), 0 1px 4px rgba(0,0,0,0.12);
+      transition: background 0.2s ease, transform 0.15s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s ease;
+    }
+
+    .btn-primary:hover {
+      background: var(--red-lt);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(182,61,43,0.45), 0 2px 8px rgba(0,0,0,0.12);
+    }
+
+    .btn-primary:active { transform: translateY(0); }
+
+    /* Ghost button — light context */
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: transparent;
+      color: var(--canyon);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.02em;
+      padding: 0.9rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      border: 1.5px solid rgba(31,42,48,0.2);
+      cursor: pointer;
+      transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+    }
+
+    .btn-ghost:hover {
+      background: rgba(31,42,48,0.06);
+      border-color: rgba(31,42,48,0.35);
+      transform: translateY(-1px);
+    }
+
+    /* White button (for red CTA section) */
+    .btn-white {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: white;
+      color: var(--red);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 0.95rem;
+      letter-spacing: 0.01em;
+      padding: 1rem 2.25rem;
+      border-radius: 8px;
+      text-decoration: none;
+      white-space: nowrap;
+      flex-shrink: 0;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      transition: transform 0.15s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s ease;
+    }
+
+    .btn-white:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.22);
+    }
+
+    .btn-white:active { transform: translateY(0) scale(1); }
+
+    /* ══ SECTION LAYOUT ══ */
+    section { position: relative; }
+
+    .section-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+    }
+
+    .section-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      color: var(--canyon);
+      margin: 0 0 1.25rem;
+    }
+
+    .section-sub {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: #5a6a70;
+      max-width: 560px;
+    }
+
+    /* ══ SERVICES ══ */
+    .services-bg { background: white; }
+
+    .services-header {
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    .services-header .section-sub {
+      margin: 0 auto;
+    }
+
+    /* ── Services grid ── */
+    .svc-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3.5rem;
+    }
+
+    @media (max-width: 900px) { .svc-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .svc-grid { grid-template-columns: 1fr; } }
+
+    .svc-card {
+      background: var(--sand);
+      border-radius: 16px;
+      padding: 1.75rem 1.75rem 2rem;
+      border: 1px solid rgba(31,42,48,0.07);
+      box-shadow: 0 2px 4px rgba(31,42,48,0.04), 0 8px 28px rgba(31,42,48,0.06);
+      text-decoration: none;
+      display: block;
+      transition: transform 0.2s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s ease;
+    }
+
+    .svc-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 8px rgba(31,42,48,0.06), 0 16px 40px rgba(31,42,48,0.1);
+    }
+
+    .svc-card:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+
+    .svc-icon {
+      width: 48px; height: 48px;
+      background: rgba(182,61,43,0.1);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--red);
+      margin-bottom: 1.25rem;
+    }
+
+    .svc-cat {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin: 0 0 0.35rem;
+    }
+
+    .svc-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--canyon);
+      margin: 0 0 0.65rem;
+    }
+
+    .svc-desc {
+      font-size: 0.9rem;
+      line-height: 1.7;
+      color: rgba(31,42,48,0.62);
+      margin: 0;
+    }
+
+    .svc-link-hint {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-top: 1rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--red);
+    }
+
+    /* ══ WHY US ══ */
+    .whyus-bg { background: var(--sand); }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .why-img-wrap {
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      box-shadow:
+        0 2px 4px rgba(31,42,48,0.06),
+        0 16px 48px rgba(31,42,48,0.14),
+        0 32px 64px rgba(182,61,43,0.06);
+    }
+
+    .why-img-wrap img { width: 100%; display: block; }
+
+    .why-img-wrap::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(31,42,48,0.4) 0%, transparent 50%);
+    }
+
+    .why-badge {
+      position: absolute;
+      bottom: -1.5rem;
+      right: -1.5rem;
+      background: var(--red);
+      color: white;
+      border-radius: 14px;
+      padding: 1.2rem 1.5rem;
+      box-shadow: 0 4px 20px rgba(182,61,43,0.4);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      z-index: 2;
+    }
+
+    .why-badge-num  { font-size: 1.8rem; line-height: 1; letter-spacing: -0.03em; }
+    .why-badge-text { font-size: 0.72rem; letter-spacing: 0.04em; opacity: 0.85; margin-top: 0.2rem; }
+
+    .why-list {
+      list-style: none;
+      margin: 2rem 0 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .why-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .why-check {
+      flex-shrink: 0;
+      width: 28px; height: 28px;
+      background: rgba(182,61,43,0.12);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.1rem;
+    }
+
+    .why-check svg { width: 14px; height: 14px; stroke: var(--red); stroke-width: 2.5; }
+
+    .why-item strong {
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--canyon);
+      margin-bottom: 0.25rem;
+    }
+
+    .why-item span { font-size: 0.88rem; color: #5a6a70; line-height: 1.6; }
+
+    /* ══ PROCESS ══ */
+    .process-bg { background: white; }
+
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-top: 3.5rem;
+      position: relative;
+    }
+
+    /* Connecting line between steps */
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 27px;
+      left: calc(12.5% + 27px);
+      right: calc(12.5% + 27px);
+      height: 1px;
+      background: linear-gradient(to right, var(--red) 0%, rgba(182,61,43,0.2) 100%);
+      z-index: 0;
+    }
+
+    .process-step {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      background: var(--sand);
+      border-radius: 16px;
+      border: 1px solid rgba(31,42,48,0.06);
+      position: relative;
+      z-index: 1;
+      transition: transform 0.2s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s ease;
+    }
+
+    .process-step:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 28px rgba(31,42,48,0.1);
+    }
+
+    .step-num {
+      width: 54px; height: 54px;
+      background: var(--red);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      font-weight: 800;
+      color: white;
+      box-shadow: 0 4px 14px rgba(182,61,43,0.35);
+      transition: transform 0.2s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s ease;
+    }
+
+    .process-step:hover .step-num {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(182,61,43,0.45);
+    }
+
+    .process-step h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--canyon);
+      margin: 0 0 0.6rem;
+      letter-spacing: -0.01em;
+    }
+
+    .process-step p {
+      font-size: 0.85rem;
+      line-height: 1.7;
+      color: #5a6a70;
+      margin: 0;
+    }
+
+    /* ══ SERVICE AREA ══ */
+    .service-area-section {
+      background: var(--sand);
+      border-top: 1px solid rgba(31,42,48,0.07);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .city-tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.6rem;
+      margin-top: 1.5rem;
+    }
+    .city-tags span {
+      background: rgba(182,61,43,0.09);
+      border: 1px solid rgba(182,61,43,0.22);
+      color: var(--red-dk);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 0.4rem 0.9rem;
+      border-radius: 100px;
+    }
+
+    /* ══ TEAM PREVIEW ══ */
+    .team-preview { background: var(--canyon); position: relative; overflow: hidden; }
+    .team-preview::before {
+      content: ''; position: absolute; inset: 0; pointer-events: none;
+      background: radial-gradient(ellipse 60% 90% at 85% 12%, rgba(182,61,43,0.16) 0%, transparent 60%),
+                  radial-gradient(ellipse 50% 70% at 8% 92%, rgba(182,61,43,0.08) 0%, transparent 55%);
+    }
+    .team-preview .section-inner { position: relative; z-index: 1; }
+    .team-preview .section-label { color: var(--red-lt); }
+    .team-preview .section-title { color: var(--sand); }
+    .team-preview .section-sub  { color: rgba(244,237,228,0.6); }
+
+    .team-preview-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 3.5rem;
+    }
+    @media (max-width: 760px) { .team-preview-grid { grid-template-columns: 1fr; max-width: 460px; margin-left: auto; margin-right: auto; } }
+
+    .tp-card {
+      display: flex; align-items: center; gap: 1.5rem;
+      background: rgba(244,237,228,0.04);
+      border: 1px solid rgba(244,237,228,0.1);
+      border-radius: 18px;
+      padding: 1.4rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.15), 0 16px 40px rgba(0,0,0,0.22);
+      transition: transform 0.2s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+    .tp-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(182,61,43,0.4);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.18), 0 20px 48px rgba(0,0,0,0.28);
+    }
+
+    .tp-photo {
+      flex-shrink: 0;
+      width: 110px; height: 110px;
+      border-radius: 14px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 0 0 1px rgba(244,237,228,0.12);
+    }
+    .tp-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center center; display: block; }
+    .tp-photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(31,42,48,0.5), transparent 55%); }
+
+    .tp-role { font-family: 'Montserrat',sans-serif; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.11em; text-transform: uppercase; color: var(--red-lt); margin: 0 0 0.3rem; }
+    .tp-name { font-family: 'Montserrat',sans-serif; font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em; color: var(--sand); margin: 0 0 0.5rem; line-height: 1.1; }
+    .tp-bio  { font-size: 0.88rem; line-height: 1.6; color: rgba(244,237,228,0.62); margin: 0; }
+
+    .team-preview-cta { text-align: center; margin-top: 2.75rem; }
+    .btn-team {
+      display: inline-flex; align-items: center; gap: 0.55rem;
+      background: rgba(244,237,228,0.06);
+      color: var(--sand);
+      border: 1.5px solid rgba(244,237,228,0.2);
+      font-family: 'Montserrat',sans-serif; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase;
+      padding: 0.8rem 1.8rem;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: background 0.2s ease, border-color 0.2s ease, transform 0.18s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s ease;
+    }
+    .btn-team:hover { background: var(--red); border-color: var(--red); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(182,61,43,0.35); }
+    .btn-team:active { transform: translateY(0); }
+
+    /* ══ CTA BANNER ══ */
+    .cta-section {
+      background: var(--red);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 70% 120% at 100% 50%, rgba(255,255,255,0.07) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 80%  at   0% 50%, rgba(0,0,0,0.10)       0%, transparent 60%);
+    }
+
+    .cta-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 5rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-text h2 {
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      color: white;
+      margin: 0 0 0.75rem;
+    }
+
+    .cta-text p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.82);
+      margin: 0;
+      max-width: 480px;
+    }
+
+    /* ══ FOOTER ══ */
+    footer {
+      background: var(--canyon);
+      color: rgba(244,237,228,0.6);
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4rem 2rem 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(244,237,228,0.1);
+    }
+
+    .footer-brand p {
+      font-size: 0.88rem;
+      line-height: 1.75;
+      margin: 1rem 0 1.5rem;
+      color: rgba(244,237,228,0.55);
+    }
+
+    .footer-brand img { height: 44px; width: auto; }
+
+    .footer-col h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(244,237,228,0.9);
+      margin: 0 0 1.25rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      margin: 0; padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    .footer-col a {
+      color: rgba(244,237,228,0.55);
+      text-decoration: none;
+      font-size: 0.88rem;
+      transition: color 0.2s ease;
+    }
+
+    .footer-col a:hover { color: rgba(244,237,228,0.9); }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1.75rem;
+      font-size: 0.8rem;
+      gap: 1rem;
+    }
+
+    .footer-tagline {
+      color: rgba(182,61,43,0.75);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+    }
+
+    .social-links { display: flex; gap: 0.75rem; }
+
+    .social-link {
+      width: 36px; height: 36px;
+      border-radius: 8px;
+      border: 1px solid rgba(244,237,228,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(244,237,228,0.55);
+      text-decoration: none;
+      transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .social-link:hover {
+      background: rgba(182,61,43,0.2);
+      color: rgba(244,237,228,0.9);
+      border-color: rgba(182,61,43,0.4);
+    }
+
+    /* ══ SCROLL FADE-UP ══ */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.55s ease, transform 0.55s cubic-bezier(0.16,1,0.3,1);
+    }
+
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+    /* Focus */
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid var(--red);
+      outline-offset: 3px;
+    }
+
+    /* Disable aurora animation on mobile/tablet to prevent iOS reflow */
+    @media (max-width: 1024px) {
+      .aurora-layer {
+        animation: none;
+        background-position: 50% 50%;
+      }
+      .aurora-layer::after {
+        animation: none;
+      }
+    }
+
+    /* ══ RESPONSIVE ══ */
+    @media (max-width: 1024px) {
+      .why-grid      { grid-template-columns: 1fr; gap: 3rem; }
+      .why-img-wrap  { order: -1; }
+      .process-steps { grid-template-columns: repeat(2, 1fr); }
+      .process-steps::before { display: none; }
+      .footer-grid   { grid-template-columns: 1fr 1fr; }
+      .cta-inner     { flex-direction: column; text-align: center; }
+      .stat-pill     { padding: 0 1.5rem; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links  { display: none; }
+      .nav-toggle { display: flex; }
+      .services-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+      .process-steps { grid-template-columns: 1fr; }
+      .hero-stats-strip { flex-wrap: wrap; gap: 1rem; }
+      .stat-pill { border-right: none; padding: 0 1rem; }
+    }
+
+    /* ── Nav services dropdown ── */
+    .nav-item-services { position: relative; }
+    .nav-dropdown { display: none; position: absolute; top: 100%; left: 0; transform: none; margin-top: 0; background: rgba(18,25,31,0.98); backdrop-filter: blur(16px); border: 1px solid rgba(244,237,228,0.1); border-radius: 12px; padding: 0.4rem; list-style: none; margin: 0; min-width: 190px; box-shadow: 0 8px 40px rgba(0,0,0,0.3), 0 2px 8px rgba(0,0,0,0.2); z-index: 200; }
+    .nav-item-services:hover .nav-dropdown { display: block; } .nav-dropdown::before { content:""; position:absolute; top:-8px; left:0; right:0; height:8px; }
+    .nav-dropdown li a { display: block; padding: 0.48rem 0.85rem; border-radius: 6px; color: rgba(244,237,228,0.72); font-family: 'Montserrat',sans-serif; font-weight: 600; font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; white-space: nowrap; transition: background 0.15s ease, color 0.15s ease; }
+    .nav-dropdown li a:hover { background: rgba(182,61,43,0.18); color: rgba(244,237,228,0.95); }
+    .nav-services-toggle { display: flex !important; align-items: center; gap: 0.35rem; }
+    .nav-caret { transition: transform 0.2s ease; flex-shrink: 0; }
+    .nav-item-services:hover .nav-caret { transform: rotate(180deg); }
+  </style>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QV3VRVFFLL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QV3VRVFFLL');
+    gtag('config', 'AW-18245739484');
+  </script>
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+    (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','1291450966103691');fbq('track','PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1291450966103691&ev=PageView&noscript=1"/></noscript>
+</head>
+<body>
+
+  <!-- ══ NAV ══ -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="Cedar City Marketing">
+        <img src="brand_assets/CCM Logo-4.png" alt="Cedar City Marketing" />
+      </a>
+      <ul class="nav-links">
+        <li class="nav-item-services">
+          <a href="/services" class="nav-services-toggle">Services <svg class="nav-caret" width="11" height="7" viewBox="0 0 11 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1,1 5.5,6 10,1"/></svg></a>
+          <ul class="nav-dropdown">
+            <li><a href="/get-found">Local SEO</a></li>
+            <li><a href="/get-customers">Paid Ads</a></li>
+            <li><a href="/get-reviews">Reputation</a></li>
+            <li><a href="/web-design">Web Design</a></li>
+            <li><a href="/marketing-consultant">Marketing Consulting</a></li>
+            <li><a href="/services">Social Media</a></li>
+            <li><a href="/services">Email Marketing</a></li>
+            <li><a href="/services">AI Marketing</a></li>
+            <li><a href="/services">Analytics</a></li>
+          </ul>
+        </li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#process">Our Process</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="book-a-call.html" class="nav-cta">Book a Call</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Open menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══ HERO – AURORA ══ -->
+  <section class="hero-aurora" id="home">
+    <!-- Red rock background -->
+    <div class="hero-rock-bg"></div>
+    <!-- Aurora shimmer layer -->
+    <div class="aurora-layer"></div>
+
+    <!-- Centered hero content -->
+    <div class="hero-content">
+      <h1>
+        <span class="tr-static">Marketing that</span>
+        <span class="tr-highlight" id="tr-highlight" aria-live="polite">
+          <span class="tr-sizer" id="tr-sizer" aria-hidden="true"></span>
+          <span class="tr-chars" id="tr-chars"></span>
+        </span>
+      </h1>
+
+      <div class="hero-eyebrow">
+        <span class="hero-eyebrow-dot"></span>
+        Southern Utah's Digital Marketing Partner
+      </div>
+
+      <p class="hero-sub">
+        Cedar City Marketing helps local businesses grow with smart, ROI-focused digital marketing that actually works in your community and beyond.
+      </p>
+
+      <div class="hero-actions">
+        <a href="get-found.html" class="btn-hero-pill">
+          <span class="btn-hero-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </span>
+          Get Found
+        </a>
+        <a href="get-customers.html" class="btn-hero-pill">
+          <span class="btn-hero-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </span>
+          Get Customers
+        </a>
+        <a href="get-reviews.html" class="btn-hero-pill">
+          <span class="btn-hero-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </span>
+          Get Reviews
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SERVICES ══ -->
+  <section class="services-bg" id="services">
+    <div class="section-inner" style="padding-bottom: 3rem;">
+      <div class="services-header fade-up">
+        <p class="section-label">What We Do</p>
+        <h2 class="section-title">Marketing that moves the needle</h2>
+        <p class="section-sub">Every service we offer is designed with one goal: real growth for your business. No fluff, no vanity metrics.</p>
+      </div>
+
+      <div class="svc-grid fade-up">
+
+        <a href="/get-found" class="svc-card">
+          <div class="svc-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </div>
+          <p class="svc-cat">Discovery</p>
+          <h3 class="svc-title">Local SEO</h3>
+          <p class="svc-desc">Dominate local search results and Google Maps so customers in your area find you first, every time.</p>
+        </a>
+
+        <a href="/services#social-media" class="svc-card">
+          <div class="svc-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </div>
+          <p class="svc-cat">Engagement</p>
+          <h3 class="svc-title">Social Media</h3>
+          <p class="svc-desc">Consistent, engaging content that builds community and turns followers into loyal customers for your brand.</p>
+        </a>
+
+        <a href="/get-customers" class="svc-card">
+          <div class="svc-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg>
+          </div>
+          <p class="svc-cat">Growth</p>
+          <h3 class="svc-title">Paid Ads</h3>
+          <p class="svc-desc">Targeted Google and Meta campaigns built for maximum ROI. We focus on results, not just running ads.</p>
+        </a>
+
+        <a href="web-design" class="svc-card">
+          <div class="svc-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <p class="svc-cat">Presence</p>
+          <h3 class="svc-title">Web Design</h3>
+          <p class="svc-desc">Fast, conversion-focused websites that make a great first impression and turn visitors into paying customers.</p>
+          <span class="svc-link-hint">Learn more <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+        </a>
+
+        <a href="/services#email-marketing" class="svc-card">
+          <div class="svc-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <p class="svc-cat">Retention</p>
+          <h3 class="svc-title">Email Marketing</h3>
+          <p class="svc-desc">Automated sequences and campaigns that nurture your leads and keep your existing customers coming back.</p>
+        </a>
+
+        <a href="/services#ai-marketing" class="svc-card">
+          <div class="svc-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/><path d="M16 2l4 4-4 4"/><path d="M20 2v4h-4"/></svg>
+          </div>
+          <p class="svc-cat">Innovation</p>
+          <h3 class="svc-title">AI Marketing</h3>
+          <p class="svc-desc">Leverage AI-powered tools to automate campaigns, predict customer behavior, and personalize outreach at scale.</p>
+        </a>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ WHY US ══ -->
+  <section class="whyus-bg" id="why-us">
+    <div class="section-inner">
+      <div class="why-grid">
+        <div class="fade-up">
+          <p class="section-label">Why Cedar City Marketing</p>
+          <h2 class="section-title">Small-town roots. Big-city results.</h2>
+          <p class="section-sub">We know your market because we live in your market. We get local traffic to your website and through your doors, and we keep them coming back.</p>
+
+          <ul class="why-list">
+            <li class="why-item">
+              <div class="why-check">
+                <svg viewBox="0 0 14 14" fill="none"><polyline points="2,7 5.5,10.5 12,3"/></svg>
+              </div>
+              <div>
+                <strong>Rooted in Southern Utah</strong>
+                <span>Local knowledge means smarter campaigns. We know your market like no outsider can.</span>
+              </div>
+            </li>
+            <li class="why-item">
+              <div class="why-check">
+                <svg viewBox="0 0 14 14" fill="none"><polyline points="2,7 5.5,10.5 12,3"/></svg>
+              </div>
+              <div>
+                <strong>ROI-obsessed, not vanity-metric-chasing</strong>
+                <span>We measure success in leads, calls, and revenue. Not just likes and impressions.</span>
+              </div>
+            </li>
+            <li class="why-item">
+              <div class="why-check">
+                <svg viewBox="0 0 14 14" fill="none"><polyline points="2,7 5.5,10.5 12,3"/></svg>
+              </div>
+              <div>
+                <strong>No long-term lock-in</strong>
+                <span>Month-to-month agreements because we earn your business every single month.</span>
+              </div>
+            </li>
+            <li class="why-item">
+              <div class="why-check">
+                <svg viewBox="0 0 14 14" fill="none"><polyline points="2,7 5.5,10.5 12,3"/></svg>
+              </div>
+              <div>
+                <strong>One point of contact, always</strong>
+                <span>No ticket queues or call centers. You get a dedicated strategist who knows your business.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="fade-up" style="position:relative;">
+          <div class="why-img-wrap">
+            <svg viewBox="0 0 560 480" xmlns="http://www.w3.org/2000/svg" width="100%" style="display:block;" aria-label="Southern Utah corridor map from Beaver to St. George">
+              <defs>
+                <radialGradient id="map-vignette" cx="50%" cy="50%" r="70%">
+                  <stop offset="0%" stop-color="transparent"/>
+                  <stop offset="100%" stop-color="#0D1820" stop-opacity="0.65"/>
+                </radialGradient>
+                <radialGradient id="cedar-glow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#B63D2B" stop-opacity="0.35"/>
+                  <stop offset="100%" stop-color="#B63D2B" stop-opacity="0"/>
+                </radialGradient>
+                <filter id="city-glow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
+                  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+                <filter id="soft-glow" x="-80%" y="-80%" width="260%" height="260%">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+                </filter>
+                <linearGradient id="highway-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#B63D2B" stop-opacity="0.5"/>
+                  <stop offset="45%" stop-color="#B63D2B" stop-opacity="1"/>
+                  <stop offset="100%" stop-color="#B63D2B" stop-opacity="0.5"/>
+                </linearGradient>
+                <pattern id="grid-dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+                  <circle cx="14" cy="14" r="0.8" fill="#F4EDE4" opacity="0.12"/>
+                </pattern>
+              </defs>
+
+              <!-- Base background -->
+              <rect width="560" height="480" fill="#0F1C24"/>
+
+              <!-- Subtle terrain elevation layers -->
+              <path d="M 0 0 Q 200 30 400 10 Q 500 0 560 20 L 560 0 Z" fill="#162230" opacity="0.9"/>
+              <!-- Mountain plateau east (Wasatch/Markagunt) -->
+              <path d="M 320 0 Q 390 35 450 15 Q 510 -5 560 30 L 560 0 L 320 0 Z" fill="#1C2E3C" opacity="0.8"/>
+              <path d="M 360 0 Q 410 25 460 8 L 560 0 Z" fill="#1F3040" opacity="0.6"/>
+              <!-- Brian Head highlands -->
+              <ellipse cx="380" cy="110" rx="80" ry="55" fill="#1A2C3A" opacity="0.7"/>
+              <ellipse cx="370" cy="108" rx="50" ry="35" fill="#1C3040" opacity="0.5"/>
+              <!-- Pine Valley Mts southwest -->
+              <ellipse cx="110" cy="340" rx="70" ry="50" fill="#1A2C3A" opacity="0.6"/>
+              <!-- Central basin -->
+              <path d="M 0 220 Q 150 195 300 218 Q 430 238 560 210 L 560 480 L 0 480 Z" fill="#111E27" opacity="0.5"/>
+
+              <!-- Dot grid texture -->
+              <rect width="560" height="480" fill="url(#grid-dots)"/>
+
+              <!-- Topographic contour lines -->
+              <g stroke="#1E3040" stroke-width="1" fill="none">
+                <path d="M -10 70  Q 180 50  360 68  Q 480 80  570 62"/>
+                <path d="M -10 115 Q 180 95  360 113 Q 480 125 570 107"/>
+                <path d="M -10 160 Q 160 142 340 158 Q 470 170 570 152"/>
+                <path d="M -10 200 Q 160 184 330 200 Q 465 213 570 196"/>
+                <path d="M -10 242 Q 155 227 320 243 Q 458 256 570 240"/>
+                <path d="M -10 284 Q 155 270 318 285 Q 455 298 570 282"/>
+                <path d="M -10 326 Q 158 313 318 328 Q 454 340 570 325"/>
+                <path d="M -10 368 Q 158 356 318 371 Q 454 382 570 368"/>
+                <path d="M -10 410 Q 158 400 318 413 Q 454 423 570 410"/>
+              </g>
+
+              <!-- County boundary (Iron / Washington, approx y=290) -->
+              <line x1="0" y1="290" x2="560" y2="290" stroke="#2A4055" stroke-width="1.5" stroke-dasharray="8 5" opacity="0.6"/>
+              <text x="14" y="284" font-family="Montserrat,sans-serif" font-size="7.5" fill="#3A5570" font-weight="700" letter-spacing="2.5">IRON CO.</text>
+              <text x="14" y="304" font-family="Montserrat,sans-serif" font-size="7.5" fill="#3A5570" font-weight="700" letter-spacing="2.5">WASH. CO.</text>
+
+              <!-- I-15 highway glow (soft layer) -->
+              <path d="M 441 42 C 425 90 400 135 374 179 C 348 222 318 208 294 230 C 265 256 238 330 213 394 C 185 418 148 418 112 416"
+                    stroke="#B63D2B" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.08"/>
+              <!-- I-15 highway main line -->
+              <path d="M 441 42 C 425 90 400 135 374 179 C 348 222 318 208 294 230 C 265 256 238 330 213 394 C 185 418 148 418 112 416"
+                    stroke="url(#highway-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <!-- I-15 shield badge -->
+              <g transform="translate(325 222)">
+                <rect x="-13" y="-9" width="26" height="18" rx="3" fill="#B63D2B"/>
+                <rect x="-13" y="-9" width="26" height="8" rx="3" fill="#8f2e1e"/>
+                <text font-family="Montserrat,sans-serif" font-size="7.5" font-weight="800" fill="white" text-anchor="middle" y="5">I-15</text>
+              </g>
+
+              <!-- Cedar City glow halo -->
+              <circle cx="294" cy="230" r="50" fill="url(#cedar-glow)"/>
+              <circle cx="294" cy="230" r="50" fill="#B63D2B" opacity="0.07" filter="url(#soft-glow)"/>
+
+              <!-- Beaver (north terminus) -->
+              <circle cx="441" cy="42" r="5" fill="#0F1C24" stroke="#F4EDE4" stroke-width="1.5" opacity="0.6"/>
+              <circle cx="441" cy="42" r="2" fill="#F4EDE4" opacity="0.6"/>
+              <text x="452" y="46" font-family="Montserrat,sans-serif" font-size="10" fill="#F4EDE4" opacity="0.55" font-weight="600" letter-spacing="0.02em">Beaver</text>
+
+              <!-- Parowan -->
+              <circle cx="374" cy="179" r="4.5" fill="#0F1C24" stroke="#F4EDE4" stroke-width="1.5" opacity="0.7"/>
+              <circle cx="374" cy="179" r="2" fill="#F4EDE4" opacity="0.7"/>
+              <text x="384" y="183" font-family="Montserrat,sans-serif" font-size="10" fill="#F4EDE4" opacity="0.65" font-weight="600" letter-spacing="0.02em">Parowan</text>
+
+              <!-- Cedar City (hero marker) -->
+              <circle cx="294" cy="230" r="10" fill="#B63D2B" opacity="0.25" filter="url(#city-glow)"/>
+              <circle cx="294" cy="230" r="6.5" fill="#B63D2B"/>
+              <circle cx="294" cy="230" r="3" fill="#F4EDE4"/>
+              <text x="294" y="253" font-family="Montserrat,sans-serif" font-size="12" fill="#B63D2B" font-weight="800" text-anchor="middle" letter-spacing="0.06em">CEDAR CITY</text>
+              <!-- Subtle Cedar City ping ring -->
+              <circle cx="294" cy="230" r="18" fill="none" stroke="#B63D2B" stroke-width="1" opacity="0.3" stroke-dasharray="3 4"/>
+
+              <!-- Hurricane -->
+              <circle cx="213" cy="394" r="4.5" fill="#0F1C24" stroke="#F4EDE4" stroke-width="1.5" opacity="0.7"/>
+              <circle cx="213" cy="394" r="2" fill="#F4EDE4" opacity="0.7"/>
+              <text x="224" y="398" font-family="Montserrat,sans-serif" font-size="10" fill="#F4EDE4" opacity="0.65" font-weight="600" letter-spacing="0.02em">Hurricane</text>
+
+              <!-- St. George (south terminus) -->
+              <circle cx="112" cy="416" r="7" fill="#0F1C24" stroke="#F4EDE4" stroke-width="1.5" opacity="0.85"/>
+              <circle cx="112" cy="416" r="3" fill="#F4EDE4" opacity="0.85"/>
+              <text x="112" y="437" font-family="Montserrat,sans-serif" font-size="11" fill="#F4EDE4" font-weight="700" text-anchor="middle" opacity="0.85" letter-spacing="0.02em">St. George</text>
+
+              <!-- North arrow -->
+              <g transform="translate(530 54)" opacity="0.45">
+                <line x1="0" y1="16" x2="0" y2="-16" stroke="#F4EDE4" stroke-width="1.2" stroke-linecap="round"/>
+                <polygon points="0,-20 -4,-12 4,-12" fill="#F4EDE4"/>
+                <text y="26" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="9" fill="#F4EDE4" font-weight="700" letter-spacing="1">N</text>
+              </g>
+
+              <!-- Scale bar -->
+              <g transform="translate(22 456)" opacity="0.4">
+                <line x1="0" y1="0" x2="56" y2="0" stroke="#F4EDE4" stroke-width="1" stroke-linecap="round"/>
+                <line x1="0" y1="-4" x2="0" y2="4" stroke="#F4EDE4" stroke-width="1"/>
+                <line x1="56" y1="-4" x2="56" y2="4" stroke="#F4EDE4" stroke-width="1"/>
+                <text x="28" y="-8" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="8" fill="#F4EDE4" font-weight="600" letter-spacing="0.5">~50 mi</text>
+              </g>
+
+              <!-- Vignette overlay -->
+              <rect width="560" height="480" fill="url(#map-vignette)"/>
+            </svg>
+          </div>
+          <div class="why-badge">
+            <div class="why-badge-num">5+ yrs</div>
+            <div class="why-badge-text">Serving Southern Utah</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ MEET THE TEAM (preview) ══ -->
+  <section class="team-preview" id="team">
+    <div class="section-inner">
+      <div class="fade-up" style="text-align:center; max-width:600px; margin:0 auto;">
+        <p class="section-label">The People Behind It</p>
+        <h2 class="section-title">Meet your marketing team</h2>
+        <p class="section-sub" style="margin:0 auto;">When you hire us, you work with us. No account managers, no call centers. Just two people who know your business by name.</p>
+      </div>
+
+      <div class="team-preview-grid fade-up">
+        <div class="tp-card">
+          <div class="tp-photo"><img src="CCM/2.png" alt="Brian Johnson" /></div>
+          <div>
+            <p class="tp-role">Lead Marketing Strategist</p>
+            <h3 class="tp-name">Brian Johnson</h3>
+            <p class="tp-bio">7+ years across freelance, agency, and in-house roles. Brian builds the overall strategy and makes sure every dollar is tracked.</p>
+          </div>
+        </div>
+
+        <div class="tp-card">
+          <div class="tp-photo"><img src="CCM/1.png" alt="Madi Vikari" /></div>
+          <div>
+            <p class="tp-role">Content &amp; Paid Ads Specialist</p>
+            <h3 class="tp-name">Madi Vikari</h3>
+            <p class="tp-bio">SUU marketing grad specializing in content, social, and paid campaigns that turn attention into real leads.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-preview-cta fade-up">
+        <a href="team.html" class="btn-team">
+          Meet the full team
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROCESS ══ -->
+  <section class="process-bg" id="process">
+    <div class="section-inner">
+      <div class="fade-up" style="text-align:center; max-width:560px; margin:0 auto;">
+        <p class="section-label">How It Works</p>
+        <h2 class="section-title">Simple. Strategic. Scalable.</h2>
+        <p class="section-sub" style="margin:0 auto;">From first call to first campaign in under a week. Here's our proven process.</p>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step fade-up">
+          <div class="step-num">01</div>
+          <h3>Free Strategy Call</h3>
+          <p>We learn about your business, goals, and current situation. No sales pressure, just real conversation.</p>
+        </div>
+        <div class="process-step fade-up">
+          <div class="step-num">02</div>
+          <h3>Custom Game Plan</h3>
+          <p>We build a tailored marketing strategy with clear targets, timelines, and expected returns.</p>
+        </div>
+        <div class="process-step fade-up">
+          <div class="step-num">03</div>
+          <h3>Launch &amp; Execute</h3>
+          <p>We get your campaigns live fast, usually within 48 hours, and handle all the heavy lifting.</p>
+        </div>
+        <div class="process-step fade-up">
+          <div class="step-num">04</div>
+          <h3>Grow &amp; Optimize</h3>
+          <p>Monthly reviews, transparent reporting, and ongoing refinement to keep results compounding.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SERVICE AREA ══ -->
+  <section class="service-area-section">
+    <div style="max-width:760px; margin:0 auto;">
+      <p class="section-label">Our Service Area</p>
+      <h2 class="section-title" style="font-size:clamp(1.7rem,3vw,2.4rem); margin-bottom:1rem;">Serving Businesses Across Southern Utah</h2>
+      <p style="color:rgba(31,42,48,0.6); line-height:1.75; max-width:600px; margin:0 auto 0.5rem;">
+        We're a local team based in <strong>Cedar City, UT</strong>, and we work exclusively with businesses in Southern Utah. Whether you're on Main Street in Cedar City or running a growing operation in St. George, we know your market, your customers, and what it takes to win here.
+      </p>
+      <div class="city-tags">
+        <span>Cedar City, UT</span>
+        <span>St. George, UT</span>
+        <span>Washington City, UT</span>
+        <span>Hurricane, UT</span>
+        <span>Parowan, UT</span>
+        <span>Enoch, UT</span>
+        <span>Kanab, UT</span>
+        <span>Beaver, UT</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CTA BANNER ══ -->
+  <section class="cta-section" id="contact">
+    <div class="cta-inner">
+      <div class="cta-text">
+        <h2>Ready to grow your business?</h2>
+        <p>Book a free 30-minute strategy call. No obligation, no hard sell. Just honest advice on what would actually move the needle for your business.</p>
+      </div>
+      <a href="book-a-call.html" class="btn-white">
+        Book a Free Strategy Call
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="brand_assets/CCM Logo-4.png" alt="Cedar City Marketing" style="height:48px;width:auto;max-width:220px;" />
+          <p>Modern marketing with Southern Utah roots. We help local businesses grow smarter, faster, and further.</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/cedarcitymarketing" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/cedarcitymarketing" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Local SEO</a></li>
+            <li><a href="#services">Social Media</a></li>
+            <li><a href="#services">Paid Advertising</a></li>
+            <li><a href="web-design">Website Design</a></li>
+            <li><a href="#services">Email Marketing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#why-us">About Us</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#testimonials">Results</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+14352336029">(435) 233-6029</a></li>
+            <li><a href="mailto:brian@cedarcitymarketing.com">brian@cedarcitymarketing.com</a></li>
+            <li><a href="#contact">Cedar City, UT 84720</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Cedar City Marketing. All rights reserved.</span>
+        <span class="footer-tagline">Marketing that rocks.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Floating Consult Button ── -->
+  <div id="fcb-backdrop"></div>
+
+  <div id="fcb-popup" role="dialog" aria-modal="true" aria-labelledby="fcb-heading">
+    <button id="fcb-close" aria-label="Close">
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="9" y1="9" x2="27" y2="27"/>
+        <line x1="27" y1="9" x2="9" y2="27"/>
+      </svg>
+    </button>
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:0.1rem;">
+      <h3 id="fcb-heading">Free 30-minute strategy call</h3>
+      <span class="fcb-badge">Free</span>
+    </div>
+    <p>Schedule a brief call with our team to discuss your marketing goals and see if Cedar City Marketing is the right fit for your business.</p>
+    <button id="fcb-cta">Book a call &rarr;</button>
+  </div>
+
+  <button id="fcb-btn" aria-label="Schedule a free consult">
+    <svg class="fcb-ring" viewBox="0 0 200 200">
+      <defs>
+        <path id="fcb-circle" d="M 100,100 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0"/>
+      </defs>
+      <text>
+        <textPath href="#fcb-circle" startOffset="0%" textLength="471" lengthAdjust="spacing">GET IN TOUCH · LET'S TALK · FREE CONSULT ·</textPath>
+      </text>
+    </svg>
+    <div class="fcb-avatar">
+      <div class="fcb-avatar-inner">
+        <img src="brand_assets/Untitled design-19.png" alt="Book a free strategy call with Cedar City Marketing" />
+      </div>
+    </div>
+  </button>
+
+  <script>
+
+    // Scroll-triggered fade-up
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-up').forEach((el, i) => {
+      el.style.transitionDelay = (i % 6) * 0.07 + 's';
+      observer.observe(el);
+    });
+
+    // Mobile menu
+    function toggleMenu() {
+      const links = document.querySelector('.nav-links');
+      const isOpen = links.style.display === 'flex';
+      Object.assign(links.style, {
+        display:      isOpen ? 'none' : 'flex',
+        flexDirection:'column',
+        position:     'absolute',
+        top:          '72px',
+        left:         '0',
+        right:        '0',
+        background:   'rgba(31,42,48,0.98)',
+        padding:      '1.5rem 2rem',
+        gap:          '1.25rem',
+        borderBottom: '1px solid rgba(244,237,228,0.1)'
+      });
+    }
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+
+    // ── Text Rotate Hero ──
+    (function() {
+      const isMobile = window.matchMedia("(max-width: 1024px)").matches;
+      const words = isMobile
+        ? ["rocks", "pays you", "matters", "delivers", "works"]
+        : ["rocks", "pays you", "matters", "delivers", "makes a difference"];
+      const STAGGER = 0.028; // seconds between each character
+      const INTERVAL = 2600; // ms between rotations
+
+      const highlight = document.getElementById('tr-highlight');
+      const charsEl   = document.getElementById('tr-chars');
+      const sizer     = document.getElementById('tr-sizer');
+
+      let current = 0;
+      let animating = false;
+
+      function buildChars(word, phase) {
+        // phase: 'in' | 'out'
+        charsEl.innerHTML = '';
+        const chars = [...word]; // unicode-safe split
+        const total = chars.length;
+        chars.forEach((ch, i) => {
+          const outer = document.createElement('span');
+          outer.className = 'tr-char';
+
+          const inner = document.createElement('span');
+          inner.className = 'tr-char-inner';
+          // stagger from last → first (matching the demo)
+          const delay = (total - 1 - i) * STAGGER;
+          inner.style.animationDelay = delay + 's';
+          inner.textContent = ch === ' ' ? '\u00A0' : ch;
+
+          outer.appendChild(inner);
+          charsEl.appendChild(outer);
+        });
+
+        // force reflow so animations trigger
+        void charsEl.offsetWidth;
+
+        charsEl.querySelectorAll('.tr-char-inner').forEach(el => {
+          el.classList.add(phase === 'in' ? 'tr-in' : 'tr-out');
+        });
+      }
+
+      function getAnimDuration(word) {
+        // longest delay + animation duration
+        return ([...word].length - 1) * STAGGER * 1000 + 450;
+      }
+
+      function showWord(word) {
+        // size the highlight box to the incoming word before animating
+        sizer.textContent = word.replace(/ /g, '\u00A0');
+        // include left + right padding so text is never clipped
+        const style = getComputedStyle(highlight);
+        const padH = parseFloat(style.paddingLeft) + parseFloat(style.paddingRight);
+        highlight.style.width = (sizer.offsetWidth + padH) + 'px';
+        buildChars(word, 'in');
+      }
+
+      function rotate() {
+        if (animating) return;
+        animating = true;
+
+        const currentWord = words[current];
+        const nextIndex = (current + 1) % words.length;
+        const nextWord  = words[nextIndex];
+
+        // animate out current
+        buildChars(currentWord, 'out');
+
+        const outDuration = getAnimDuration(currentWord);
+
+        setTimeout(() => {
+          current = nextIndex;
+          showWord(nextWord);
+          const inDuration = getAnimDuration(nextWord);
+          setTimeout(() => { animating = false; }, inDuration);
+        }, outDuration * 0.6); // start in-anim slightly before out finishes
+      }
+
+      // init
+      showWord(words[0]);
+      setInterval(rotate, INTERVAL);
+    })();
+
+    // ── Floating Consult Button ──
+    (function() {
+      const backdrop = document.getElementById('fcb-backdrop');
+      const popup    = document.getElementById('fcb-popup');
+      const btn      = document.getElementById('fcb-btn');
+
+      function open() {
+        backdrop.classList.add('fcb-open');
+        popup.classList.add('fcb-open');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function close() {
+        backdrop.classList.remove('fcb-open');
+        popup.classList.remove('fcb-open');
+        document.body.style.overflow = '';
+      }
+
+      btn.addEventListener('click', () => {
+        popup.classList.contains('fcb-open') ? close() : open();
+      });
+
+      backdrop.addEventListener('click', close);
+      document.getElementById('fcb-close').addEventListener('click', close);
+
+      document.getElementById('fcb-cta').addEventListener('click', () => {
+        window.location.href = 'book-a-call.html';
+      });
+    })();
+  </script>
+  <!-- Cookie Notice -->
+  <div id="cookie-bar" style="position:fixed;bottom:0;left:0;right:0;z-index:9999;background:rgba(14,21,25,0.97);border-top:1px solid rgba(221,213,200,0.08);padding:1rem 2rem;display:none;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
+    <p style="margin:0;font-family:'Open Sans',sans-serif;font-size:0.85rem;color:rgba(221,213,200,0.65);">This site uses cookies for analytics and advertising. <a href="/privacy-policy" style="color:#B63D2B;">Privacy Policy</a></p>
+    <button id="cookie-ok" style="background:#B63D2B;color:white;border:none;padding:0.45rem 1.1rem;border-radius:5px;cursor:pointer;font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.78rem;letter-spacing:0.05em;white-space:nowrap;">Got it</button>
+  </div>
+  <script>
+    if (!localStorage.getItem('cookie-ok')) {
+      document.getElementById('cookie-bar').style.display = 'flex';
+    }
+    document.getElementById('cookie-ok').addEventListener('click', function() {
+      localStorage.setItem('cookie-ok', '1');
+      document.getElementById('cookie-bar').style.display = 'none';
+    });
+  </script>
+</body>
+</html>
