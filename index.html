@@ -433,7 +433,7 @@
     .hero-rock-bg {
       position: absolute;
       inset: 0;
-      background-image: url("brand_assets/Mar 9, 2026 at 07_35_57 PM.png");
+      background-image: url("brand_assets/IMG_7262.jpeg");
       background-size: cover;
       background-position: center 60%;
       opacity: 0.13;
@@ -1111,17 +1111,17 @@
     .team-preview-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-      margin-top: 3.5rem;
+      gap: 1.85rem;
+      margin-top: 3.75rem;
     }
-    @media (max-width: 760px) { .team-preview-grid { grid-template-columns: 1fr; max-width: 460px; margin-left: auto; margin-right: auto; } }
+    @media (max-width: 820px) { .team-preview-grid { grid-template-columns: 1fr; max-width: 520px; margin-left: auto; margin-right: auto; } }
 
     .tp-card {
-      display: flex; align-items: center; gap: 1.5rem;
+      display: flex; align-items: center; gap: 1.9rem;
       background: rgba(244,237,228,0.04);
       border: 1px solid rgba(244,237,228,0.1);
-      border-radius: 18px;
-      padding: 1.4rem;
+      border-radius: 20px;
+      padding: 2rem;
       box-shadow: 0 2px 4px rgba(0,0,0,0.15), 0 16px 40px rgba(0,0,0,0.22);
       transition: transform 0.2s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s ease, border-color 0.2s ease;
     }
@@ -1130,11 +1130,12 @@
       border-color: rgba(182,61,43,0.4);
       box-shadow: 0 4px 8px rgba(0,0,0,0.18), 0 20px 48px rgba(0,0,0,0.28);
     }
+    @media (max-width: 420px) { .tp-card { flex-direction: column; text-align: center; gap: 1.35rem; } }
 
     .tp-photo {
       flex-shrink: 0;
-      width: 110px; height: 110px;
-      border-radius: 14px;
+      width: 156px; height: 156px;
+      border-radius: 18px;
       overflow: hidden;
       position: relative;
       box-shadow: 0 0 0 1px rgba(244,237,228,0.12);
@@ -1142,9 +1143,9 @@
     .tp-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center center; display: block; }
     .tp-photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(31,42,48,0.5), transparent 55%); }
 
-    .tp-role { font-family: 'Montserrat',sans-serif; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.11em; text-transform: uppercase; color: var(--red-lt); margin: 0 0 0.3rem; }
-    .tp-name { font-family: 'Montserrat',sans-serif; font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em; color: var(--sand); margin: 0 0 0.5rem; line-height: 1.1; }
-    .tp-bio  { font-size: 0.88rem; line-height: 1.6; color: rgba(244,237,228,0.62); margin: 0; }
+    .tp-role { font-family: 'Montserrat',sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.11em; text-transform: uppercase; color: var(--red-lt); margin: 0 0 0.4rem; }
+    .tp-name { font-family: 'Montserrat',sans-serif; font-size: 1.65rem; font-weight: 800; letter-spacing: -0.02em; color: var(--sand); margin: 0 0 0.65rem; line-height: 1.1; }
+    .tp-bio  { font-size: 0.96rem; line-height: 1.65; color: rgba(244,237,228,0.66); margin: 0; }
 
     .team-preview-cta { text-align: center; margin-top: 2.75rem; }
     .btn-team {
@@ -1459,6 +1460,44 @@
     </div>
   </section>
 
+  <!-- ══ MEET THE TEAM (preview) ══ -->
+  <section class="team-preview" id="team">
+    <div class="section-inner">
+      <div class="fade-up" style="text-align:center; max-width:600px; margin:0 auto;">
+        <p class="section-label">The People Behind It</p>
+        <h2 class="section-title">Meet your marketing team</h2>
+        <p class="section-sub" style="margin:0 auto;">When you hire us, you work with us. No account managers, no call centers. Just two people who know your business by name.</p>
+      </div>
+
+      <div class="team-preview-grid fade-up">
+        <div class="tp-card">
+          <div class="tp-photo"><img src="CCM/2.png" alt="Brian Johnson" /></div>
+          <div>
+            <p class="tp-role">Lead Marketing Strategist</p>
+            <h3 class="tp-name">Brian Johnson</h3>
+            <p class="tp-bio">10+ years across freelance, agency, and in-house roles. Brian builds the overall strategy and makes sure every dollar is tracked.</p>
+          </div>
+        </div>
+
+        <div class="tp-card">
+          <div class="tp-photo"><img src="CCM/1.png" alt="Madi Vikari" /></div>
+          <div>
+            <p class="tp-role">Content &amp; Paid Ads Specialist</p>
+            <h3 class="tp-name">Madi Vikari</h3>
+            <p class="tp-bio">SUU marketing grad specializing in content, social, and paid campaigns that turn attention into real leads.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-preview-cta fade-up">
+        <a href="team.html" class="btn-team">
+          Learn More
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- ══ SERVICES ══ -->
   <section class="services-bg" id="services">
     <div class="section-inner" style="padding-bottom: 3rem;">
@@ -1714,44 +1753,6 @@
             <div class="why-badge-text">Serving Southern Utah</div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══ MEET THE TEAM (preview) ══ -->
-  <section class="team-preview" id="team">
-    <div class="section-inner">
-      <div class="fade-up" style="text-align:center; max-width:600px; margin:0 auto;">
-        <p class="section-label">The People Behind It</p>
-        <h2 class="section-title">Meet your marketing team</h2>
-        <p class="section-sub" style="margin:0 auto;">When you hire us, you work with us. No account managers, no call centers. Just two people who know your business by name.</p>
-      </div>
-
-      <div class="team-preview-grid fade-up">
-        <div class="tp-card">
-          <div class="tp-photo"><img src="CCM/2.png" alt="Brian Johnson" /></div>
-          <div>
-            <p class="tp-role">Lead Marketing Strategist</p>
-            <h3 class="tp-name">Brian Johnson</h3>
-            <p class="tp-bio">7+ years across freelance, agency, and in-house roles. Brian builds the overall strategy and makes sure every dollar is tracked.</p>
-          </div>
-        </div>
-
-        <div class="tp-card">
-          <div class="tp-photo"><img src="CCM/1.png" alt="Madi Vikari" /></div>
-          <div>
-            <p class="tp-role">Content &amp; Paid Ads Specialist</p>
-            <h3 class="tp-name">Madi Vikari</h3>
-            <p class="tp-bio">SUU marketing grad specializing in content, social, and paid campaigns that turn attention into real leads.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="team-preview-cta fade-up">
-        <a href="team.html" class="btn-team">
-          Meet the full team
-          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-        </a>
       </div>
     </div>
   </section>
