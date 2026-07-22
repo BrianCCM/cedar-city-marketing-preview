@@ -26,6 +26,8 @@
       --fairway:    #2f6b3a;
       --fairway-dk: #21502a;
       --fairway-lt: #4f9a56;
+      --grass:      #3f9a45;
+      --grass-lt:   #4cb453;
       --paper:      #f7f2e4;
       --paper-line: #d8cdb4;
       --ink:        #26312b;
@@ -59,16 +61,20 @@
     .btn-red:hover { background: var(--red-lt); transform: translateY(-2px); box-shadow: 0 10px 30px rgba(182,61,43,0.5); }
     .btn-red:active { transform: translateY(0); }
     .btn-red:focus-visible { outline: 3px solid var(--red-lt); outline-offset: 3px; }
+    .btn-green { background: var(--grass); color: #fff; box-shadow: 0 6px 24px rgba(63,154,69,0.5), 0 1px 3px rgba(0,0,0,0.25); }
+    .btn-green:hover { background: var(--grass-lt); transform: translateY(-2px); box-shadow: 0 10px 32px rgba(63,154,69,0.6); }
+    .btn-green:active { transform: translateY(0); }
+    .btn-green:focus-visible { outline: 3px solid var(--grass-lt); outline-offset: 3px; }
     .btn svg { flex-shrink: 0; }
 
     /* ══ HERO ══ */
     .hero {
       position: relative;
       min-height: 100svh;
-      min-height: 640px;
+      min-height: 760px;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
+      justify-content: space-between;
       overflow: hidden;
       background: var(--canyon);
     }
@@ -76,28 +82,34 @@
       position: absolute; inset: 0;
       background-image: url("brand_assets/golf-hero-tee.jpg");
       background-size: cover;
-      background-position: 50% 42%;
+      background-position: 50% 30%;
       z-index: 0;
     }
     .hero-img::after {
       content: ''; position: absolute; inset: 0;
       background:
-        linear-gradient(to top, rgba(18,24,28,0.96) 0%, rgba(18,24,28,0.78) 26%, rgba(18,24,28,0.28) 52%, rgba(18,24,28,0.35) 100%);
+        linear-gradient(to top, rgba(18,24,28,0.97) 0%, rgba(18,24,28,0.9) 20%, rgba(18,24,28,0.4) 44%, rgba(18,24,28,0.12) 62%, rgba(18,24,28,0.42) 100%);
     }
     .hero-top {
       position: relative; z-index: 2;
-      padding: 1.6rem 1.5rem 0;
-      display: flex; align-items: center; justify-content: space-between;
+      width: 100%; max-width: 560px; margin: 0 auto;
+      padding: 1.9rem 1.5rem 0;
+      display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem;
     }
-    .hero-logo { height: 46px; width: auto; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4)); }
+    .hero-logo { height: 46px; width: auto; flex-shrink: 0; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4)); }
     .hero-tag {
-      font-family: 'Montserrat', sans-serif; font-weight: 700;
-      font-size: 0.6rem; letter-spacing: 0.14em; text-transform: uppercase;
-      color: rgba(244,237,228,0.82);
-      border: 1px solid rgba(244,237,228,0.28);
-      padding: 0.35rem 0.7rem; border-radius: 100px;
-      background: rgba(0,0,0,0.25); backdrop-filter: blur(4px);
-      text-align: right; line-height: 1.3;
+      font-family: 'Montserrat', sans-serif; font-weight: 800;
+      font-size: 0.8rem; letter-spacing: 0.005em;
+      color: var(--sand);
+      border: 1px solid rgba(244,237,228,0.26);
+      padding: 0.5rem 0.85rem; border-radius: 12px;
+      background: rgba(0,0,0,0.32); backdrop-filter: blur(6px);
+      text-align: right; line-height: 1.2; max-width: 180px;
+    }
+    .hero-tag-label {
+      display: block;
+      font-size: 0.56rem; letter-spacing: 0.15em; text-transform: uppercase;
+      font-weight: 700; color: var(--grass-lt); margin-bottom: 0.22rem;
     }
     .hero-content {
       position: relative; z-index: 2;
@@ -325,21 +337,19 @@
 
     <div class="hero-top">
       <img src="brand_assets/CCM Logo-4.png" alt="Cedar City Marketing" class="hero-logo" />
-      <div class="hero-tag">Proud Course<br />Sponsor</div>
+      <div class="hero-tag">
+        <span class="hero-tag-label">Proud Sponsor</span>
+        Canyon Breeze Golf Course
+      </div>
     </div>
 
     <div class="hero-content">
-      <span class="hero-eyebrow">For business owners who golf</span>
       <h1>You keep score on the course.<br /><em>Are you keeping score on your marketing?</em></h1>
-      <p class="hero-sub">You know your handicap to the decimal. But do you know what your marketing actually brings back? Most owners don't. We fix that.</p>
-      <a href="book-a-call.html" class="btn btn-red" id="hero-cta">
-        Book a Free Strategy Call
+      <p class="hero-sub">You know your handicap to the decimal. Why not treat your marketing the same?</p>
+      <a href="book-a-call.html" class="btn btn-green" id="hero-cta">
+        Let's Tee It Up
         <svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
       </a>
-      <div class="hero-scan">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3M20 14v.01M14 20h.01M20 20v.01M17 20h.01"/></svg>
-        Cedar City Marketing, right here on the course.
-      </div>
     </div>
   </header>
 
@@ -396,7 +406,7 @@
   <section class="sec">
     <div class="wrap">
       <p class="sec-label">How we play it</p>
-      <h2 class="sec-title">Marketing you can actually <em>keep score on</em></h2>
+      <h2 class="sec-title">A lot of agencies sell marketing. <em>We just get results.</em></h2>
       <p class="sec-lead">No vanity metrics. No "brand awareness" hand-waving. Just a clear line from every dollar in to every dollar out.</p>
 
       <div class="value-list">
@@ -443,10 +453,10 @@
   <!-- ══ FINAL CTA ══ -->
   <section class="sec cta-sec">
     <div class="wrap">
-      <h2>Let's talk numbers over 18 holes. Or 30 minutes.</h2>
+      <h2>Let's talk numbers over a round. Or 30 minutes.</h2>
       <p>Book a free strategy call. We'll show you exactly how we'd track and grow the return on your marketing. No pressure, no jargon.</p>
       <a href="book-a-call.html" class="btn btn-red" id="cta-btn">
-        Book a Free Strategy Call
+        Let's Tee It Up
         <svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
       </a>
       <a href="tel:+14352336029" class="cta-phone">
@@ -466,7 +476,7 @@
   <!-- ══ STICKY MOBILE CTA ══ -->
   <div class="sticky-cta" id="stickyCta">
     <a href="book-a-call.html" class="btn btn-red">
-      Book a Free Strategy Call
+      Let's Tee It Up
       <svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
     </a>
   </div>
